@@ -6,61 +6,15 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" id="wixDesktopViewport">
-
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-  <!-- Legacy Polyfills -->
-  <script nomodule=""
-    src="originalassets/minified.js"></script>
-  <script nomodule=""
-    src="originalassets/focus-within-polyfill.js"></script>
-  <script nomodule=""
-    src="originalassets/polyfill.min.js"></script>
-
-
-
-  <!-- Polyfills check -->
-  <script>
-    if (
-      typeof Promise === 'undefined' ||
-      typeof Set === 'undefined' ||
-      typeof Object.assign === 'undefined' ||
-      typeof Array.from === 'undefined' ||
-      typeof Symbol === 'undefined'
-    ) {
-      // send bi in order to detect the browsers in which polyfills are not working
-      window.fedops.phaseStarted('missing_polyfills')
-    }
-  </script>
 
   <link rel="stylesheet" href="stylesheet.css">
 
 
 
   <style>
-    .fullScreenOverlay {
-      bottom: 0;
-      display: flex;
-      justify-content: center;
-      left: 0;
-      overflow-y: hidden;
-      position: fixed;
-      right: 0;
-      top: -60px;
-      z-index: 1005
-    }
-
-    .fullScreenOverlay>.fullScreenOverlayContent {
-      bottom: 0;
-      left: 0;
-      margin: 0 auto;
-      overflow: hidden;
-      position: absolute;
-      right: 0;
-      top: 60px;
-      transform: translateZ(0)
-    }
-
+    
+    /* Used for project overview */
     [data-mesh-id$=centeredContent],
     [data-mesh-id$=form],
     [data-mesh-id$=inlineContent] {
@@ -691,14 +645,6 @@
       display: none
     }
 
-    .lvxhkV {
-      bottom: 0;
-      left: 0;
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 100%
-    }
 
     .QJjwEo {
       transform: translateY(-100%);
@@ -733,12 +679,6 @@
       width: 100%
     }
 
-    :host(:not(.device-mobile-optimized)) .vlM3HR,
-    body:not(.device-mobile-optimized) .vlM3HR {
-      margin-left: calc((100% - var(--site-width))/2);
-      width: var(--site-width)
-    }
-
     .AT7o0U[data-focuscycled=active] {
       outline: 1px solid transparent
     }
@@ -748,7 +688,7 @@
       transition: outline .01s ease
     }
 
-    .AT7o0U .vlM3HR {
+    .AT7o0U {
       bottom: 0;
       left: 0;
       position: absolute;
@@ -3532,80 +3472,10 @@
 
   <script src="originalassets/page-script.js"
     id="bw-fido2-page-script"></script>
-  <script
-    src="originalassets/rb_wixui.thunderbolt_bootstrap.ccc9920a.bundle.min.js"></script>
-  <script
-    src="originalassets/rb_wixui.thunderbolt_bootstrap-classic.73a1ec3a.bundle.min.js"></script>
-  <script
-    src="originalassets/rb_wixui.thunderbolt[StylableHorizontalMenu_WrapColumn].0b525.js"></script>
-  <script
-    src="originalassets/rb_wixui.thunderbolt[FreemiumBannerDesktop].d78a64d6.bundle.m.js"></script>
-  <script
-    src="originalassets/rb_wixui.thunderbolt[SkipToContentButton].69abe737.bundle.min.js"></script>
-  <script
-    src="originalassets/rb_wixui.thunderbolt[WPhoto_MouseOverPhoto].e45f264e.bundle.m.js"></script>
-  <script
-    src="originalassets/rb_wixui.thunderbolt[StylableButton_Default].a0cecb63.bundle..js"></script>
-  <script
-    src="originalassets/rb_wixui.thunderbolt[MusicPlayer].45461aa6.bundle.min.js"></script>
-  <script
-    src="originalassets/rb_wixui.thunderbolt[FiveGridLine_SolidLine].b91bad1d.bundle..js"></script>
-  <script
-    src="originalassets/rb_wixui.thunderbolt[ClassicSection].a51f9b9a.bundle.min.js"></script>
-  <script
-    src="originalassets/rb_wixui.thunderbolt[Container_DefaultAreaSkin].876969f0.bund.js"></script>
-  <script
-    src="originalassets/rb_wixui.thunderbolt[Tabs].101babc2.bundle.min.js"></script>
-  <script
-    src="originalassets/rb_wixui.thunderbolt[SingleTab].908b661d.bundle.min.js"></script>
+  
 </head>
 
 <body class="">
-  <script type="text/javascript">
-    var bodyCacheable = true;
-
-    var exclusionReason = { "shouldRender": true, "forced": false };
-    var ssrInfo = { "cacheExclusionReason": "", "renderBodyTime": 3292, "renderTimeStamp": 1719831982387 }
-  </script>
-
-
-
-
-
-  <!--pageHtmlEmbeds.bodyStart start-->
-  <script type="wix/htmlEmbeds" id="pageHtmlEmbeds.bodyStart start"></script>
-
-  <script type="wix/htmlEmbeds" id="pageHtmlEmbeds.bodyStart end"></script>
-  <!--pageHtmlEmbeds.bodyStart end-->
-
-
-
-
-  <script id="wix-first-paint">
-    if (window.ResizeObserver &&
-      (!window.PerformanceObserver || !PerformanceObserver.supportedEntryTypes || PerformanceObserver.supportedEntryTypes.indexOf('paint') === -1)) {
-      new ResizeObserver(function (entries, observer) {
-        entries.some(function (entry) {
-          var contentRect = entry.contentRect;
-          if (contentRect.width > 0 && contentRect.height > 0) {
-            requestAnimationFrame(function (now) {
-              window.wixFirstPaint = now;
-              dispatchEvent(new CustomEvent('wixFirstPaint'));
-            });
-            observer.disconnect();
-            return true;
-          }
-        });
-      }).observe(document.body);
-    }
-  </script>
-
-
-
-
-
-
-
   <pages-css id="pages-css">
     <style id="css_masterPage">
       @font-face {
@@ -9232,12 +9102,11 @@
     </style>
   </pages-css>
 
-
-
-
   <div id="SITE_CONTAINER">
     <div id="main_MF" class="main_MF">
       <button id="SKIP_TO_CONTENT_BTN" class="SKIP_TO_CONTENT_BTN LHrbPP has-custom-focus" tabindex="0">Skip to Main Content</button>
+      
+      
       <div id="BACKGROUND_GROUP" class="BACKGROUND_GROUP">
         <div id="pageBackground_c1zeq" data-media-height-override-type="" data-media-position-override="false"
           class="pageBackground_c1zeq BmZ5pC">
@@ -9247,6 +9116,7 @@
           </div>
         </div>
       </div>
+      
       <div id="site-root" class="site-root">
         <div id="masterPage" class="mesh-layout remove-wrappers masterPage css-editing-scope">
           <header id="SITE_HEADER" class="xU8fqS SITE_HEADER wixui-header" tabindex="-1">
@@ -13858,14 +13728,11 @@
             </div>
           </main>
           <footer id="SITE_FOOTER" class="AT7o0U SITE_FOOTER wixui-footer" tabindex="-1">
-            <div class="lvxhkV"></div>
             <div class="cKxVkc">
-              <div class="vlM3HR"></div>
               <div class="VrZrC0">
                 <div data-mesh-id="SITE_FOOTERinlineContent"  class="">
                   <div data-mesh-id="SITE_FOOTERinlineContent-gridContainer" >
-                    <div id="comp-lnpr5ei8" class="HcOXKn c9GqVL QxJLC3 comp-lnpr5ei8 wixui-rich-text"
-                      >
+                    <div id="comp-lnpr5ei8" class="HcOXKn c9GqVL QxJLC3 comp-lnpr5ei8 wixui-rich-text">
                       <p class="font_8 wixui-rich-text__text" style="text-align:center; font-size:15px;">Copyright ©
                         2024 Alexandria van Eekelen. All Rights Reserved</p>
                     </div>
@@ -13877,10 +13744,6 @@
         </div>
       </div>
   </div>
-
-  <!-- preloading pre-scripts -->
-
-
 
 
 
