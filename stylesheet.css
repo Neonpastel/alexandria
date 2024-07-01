@@ -1,3 +1,98 @@
+:root,
+      :host,
+      .spxThemeOverride,
+      .max-width-container {
+        --color_0: 255, 255, 255;
+        --color_1: 0, 0, 0;
+        --color_2: 255, 255, 255;
+        --color_3: 237, 28, 36;
+        --color_4: 0, 136, 203;
+        --color_5: 255, 203, 5;
+        --color_6: 114, 114, 114;
+        --color_7: 176, 176, 176;
+        --color_8: 255, 255, 255;
+        --color_9: 114, 114, 114;
+        --color_10: 176, 176, 176;
+        --color_11: 28, 25, 28;
+        --color_12: 73, 69, 73;
+        --color_13: 119, 115, 119;
+        --color_14: 164, 160, 164;
+        --color_15: 210, 205, 210;
+        --color_16: 85, 32, 24;
+        --color_17: 169, 65, 48;
+        --color_18: 254, 97, 72;
+        --color_19: 254, 176, 163;
+        --color_20: 255, 202, 194;
+        --color_21: 20, 30, 63;
+        --color_22: 39, 60, 125;
+        --color_23: 103, 117, 158;
+        --color_24: 146, 157, 190;
+        --color_25: 184, 194, 223;
+        --color_26: 31, 54, 36;
+        --color_27: 61, 108, 71;
+        --color_28: 92, 162, 107;
+        --color_29: 151, 193, 160;
+        --color_30: 192, 224, 199;
+        --color_31: 36, 50, 54;
+        --color_32: 72, 101, 109;
+        --color_33: 107, 151, 163;
+        --color_34: 143, 201, 217;
+        --color_35: 196, 227, 236;
+        --color_36: 28, 25, 28;
+        --color_37: 210, 205, 210;
+        --color_38: 73, 69, 73;
+        --color_39: 119, 115, 119;
+        --color_40: 164, 160, 164;
+        --color_41: 254, 97, 72;
+        --color_42: 254, 176, 163;
+        --color_43: 107, 151, 163;
+        --color_44: 28, 25, 28;
+        --color_45: 210, 205, 210;
+        --color_46: 210, 205, 210;
+        --color_47: 164, 160, 164;
+        --color_48: 254, 97, 72;
+        --color_49: 254, 97, 72;
+        --color_50: 28, 25, 28;
+        --color_51: 28, 25, 28;
+        --color_52: 254, 97, 72;
+        --color_53: 254, 97, 72;
+        --color_54: 119, 115, 119;
+        --color_55: 119, 115, 119;
+        --color_56: 28, 25, 28;
+        --color_57: 28, 25, 28;
+        --color_58: 254, 97, 72;
+        --color_59: 254, 97, 72;
+        --color_60: 254, 97, 72;
+        --color_61: 254, 97, 72;
+        --color_62: 28, 25, 28;
+        --color_63: 28, 25, 28;
+        --color_64: 119, 115, 119;
+        --color_65: 119, 115, 119;
+        --font_0: normal normal normal 70px/1.4em georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+        --font_1: italic normal normal 16px/1.4em georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+        --font_2: normal normal normal 35px/1.4em georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+        --font_3: normal normal normal 50px/1.4em georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+        --font_4: normal normal normal 40px/1.4em georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+        --font_5: normal normal normal 26px/1.4em georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+        --font_6: normal normal normal 20px/1.4em georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+        --font_7: normal normal normal 16px/1.4em georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+        --font_8: normal normal normal 15px/1.4em avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
+        --font_9: italic normal normal 12px/1.4em georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+        --font_10: italic normal normal 11px/1.4em georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+        --wix-ads-height: 0;
+        --sticky-offset: 50px;
+        --wix-ads-top-height: 0;
+        --vh-unit: calc((100vh - 50px) / 100);
+        --site-width: 980px;
+        --above-all-z-index: 100000;
+        --portals-z-index: 100001;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        --minViewportSize: 320;
+        --maxViewportSize: 1920;
+        --theme-spx-ratio: 1px;
+      }
+
 body,
 html {
   background: transparent;
@@ -14,10 +109,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 10px;
   position: relative;
-}
 
-
-body {
   overflow-x: auto;
   overflow-y: scroll
 }
@@ -31,20 +123,10 @@ body:not([data-js-loaded]) [data-hide-prejs] {
   visibility: hidden
 }
 
-#SITE_CONTAINER {
-}
-
 :root {
   --one-unit: 1vw;
   --section-max-width: 9999px
 }
-
-@supports(container-type:inline-size) {
-  :root {
-    --one-unit: 1cqw
-  }
-}
-
 
 
 a,
@@ -290,3 +372,73 @@ a {
     #masterPage.mesh-layout.desktop>* {
       width: 100%
     }
+
+    #masterPage:not(.landingPage) #PAGES_CONTAINER {
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+
+      #masterPage.landingPage #SITE_HEADER {
+        display: none;
+      }
+
+      #masterPage.landingPage #SITE_FOOTER {
+        display: none;
+      }
+
+      #masterPage.landingPage #SITE_HEADER-placeholder {
+        display: none;
+      }
+
+      #masterPage.landingPage #SITE_FOOTER-placeholder {
+        display: none;
+      }
+
+      #SITE_CONTAINER.focus-ring-active :not(.has-custom-focus):not(.ignore-focus):not([tabindex="-1"]):focus,
+      #SITE_CONTAINER.focus-ring-active :not(.has-custom-focus):not(.ignore-focus):not([tabindex="-1"]):focus~.wixSdkShowFocusOnSibling {
+        --focus-ring-box-shadow: 0 0 0 1px #ffffff, 0 0 0 3px #116dff;
+        box-shadow: var(--focus-ring-box-shadow) !important;
+        z-index: 1;
+      }
+
+      .has-inner-focus-ring {
+        --focus-ring-box-shadow: inset 0 0 0 1px #ffffff, inset 0 0 0 3px #116dff !important;
+      }
+
+      #masterPage {
+        left: 0;
+        margin-left: 0;
+        width: 100%;
+        min-width: 0;
+      }
+
+      #SITE_HEADER {
+        z-index: 50;
+        --above-all-in-container: 10000;
+      }
+
+      #SITE_FOOTER {
+        z-index: 51;
+        --above-all-in-container: 10000;
+      }
+
+      #PAGES_CONTAINER {
+        --pinned-layer-in-container: 52;
+        --above-all-in-container: 49;
+      }
+
+
+
+
+
+
+
+
+/* CUSTOM */
+.header1 {
+    color: var(--color_36);
+    font-size: 12px;
+    line-height: normal;
+    letter-spacing: normal;
+    font-family: sans-serif;
+}
