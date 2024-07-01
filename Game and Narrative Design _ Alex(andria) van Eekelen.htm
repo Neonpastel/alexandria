@@ -91,27 +91,14 @@
     }
   </script>
 
-  <!-- Essential Viewer Model -->
-  <script type="application/json"
-    id="wix-essential-viewer-model">{"fleetConfig":{"fleetName":"thunderbolt-renderer-user-code","type":"GA","code":0},"mode":{"qa":false,"enableTestApi":false,"debug":false,"ssrIndicator":false,"ssrOnly":false,"siteAssetsFallback":"enable"},"componentsLibrariesTopology":[{"artifactId":"editor-elements","namespace":"wixui","url":"https:\/\/static.parastorage.com\/services\/editor-elements\/1.12255.0"},{"artifactId":"editor-elements","namespace":"dsgnsys","url":"https:\/\/static.parastorage.com\/services\/editor-elements\/1.12255.0"}],"siteFeaturesConfigs":{"sessionManager":{"isRunningInDifferentSiteContext":false}},"language":{"userLanguage":"en"},"siteAssets":{"clientTopology":{"mediaRootUrl":"https:\/\/static.wixstatic.com","staticMediaUrl":"https:\/\/static.wixstatic.com\/media","moduleRepoUrl":"https:\/\/static.parastorage.com\/unpkg","fileRepoUrl":"https:\/\/static.parastorage.com\/services","siteAssetsUrl":"https:\/\/siteassets.parastorage.com","pageJsonServerUrls":["https:\/\/pages.parastorage.com","https:\/\/staticorigin.wixstatic.com","https:\/\/fallback.wix.com\/wix-html-editor-pages-webapp\/page"],"pathOfTBModulesInFileRepoForFallback":"wix-thunderbolt\/dist\/"}},"siteFeatures":["assetsLoader","businessLogger","captcha","clickHandlerRegistrar","commonConfig","componentsLoader","componentsRegistry","consentPolicy","cyclicTabbing","environmentWixCodeSdk","environment","locationWixCodeSdk","navigationManager","navigationPhases","ooi","pages","panorama","renderer","reporter","router","scrollRestoration","seoWixCodeSdk","seo","sessionManager","siteMembersWixCodeSdk","siteMembers","siteScrollBlocker","siteWixCodeSdk","stores","structureApi","thunderboltInitializer","tpaCommons","translations","warmupData","windowMessageRegistrar","windowWixCodeSdk","wixCustomElementComponent","wixEmbedsApi","componentsReact","platform"],"site":{"externalBaseUrl":"https:\/\/alexandriavaneekelen.wixsite.com\/portfolio","isSEO":false},"media":{"staticMediaUrl":"https:\/\/static.wixstatic.com\/media","mediaRootUrl":"https:\/\/static.wixstatic.com\/","staticVideoUrl":"https:\/\/video.wixstatic.com\/"},"requestUrl":"https:\/\/alexandriavaneekelen.wixsite.com\/portfolio","rollout":{"siteAssetsVersionsRollout":false,"isDACRollout":0,"isTBRollout":false},"commonConfig":{"brand":"wix","host":"VIEWER","bsi":"","consentPolicy":{},"consentPolicyHeader":{},"siteRevision":"540"},"interactionSampleRatio":0.01,"dynamicModelUrl":"https:\/\/alexandriavaneekelen.wixsite.com\/portfolio\/_api\/v2\/dynamicmodel","accessTokensUrl":"https:\/\/alexandriavaneekelen.wixsite.com\/portfolio\/_api\/v1\/access-tokens","experiments":{"specs.thunderbolt.allowWEBPTransformation":true,"specs.thunderbolt.useNewImageParallax":true}}</script>
-  <script>window.viewerModel = JSON.parse(document.getElementById('wix-essential-viewer-model').textContent)</script>
-
-
-  <script
-    data-url="https://static.parastorage.com/services/wix-thunderbolt/dist/handleAccessTokens.inline.03fbf59c.bundle.min.js">!function () { "use strict"; const e = "client-session-bind", t = "tbReady", n = window.viewerModel.experiments["specs.thunderbolt.replaceDynamicModel"] ? window.viewerModel.accessTokensUrl : window.viewerModel.dynamicModelUrl; if (viewerModel.experiments["specs.thunderbolt.hardenFetchAndXHR"]) { let i = fetch; const o = document.cookie.split(";").map((e => e.trim())).filter((t => t.startsWith(e)))[0]?.split("=")[1], s = {}; function r(e) { const { logger: n } = e.detail; try { window.tb.init({ fetch: i, fetchHeaders: s }) } catch (e) { 0, n.captureError(new Error("TB003"), { tags: { feature: "thunderbolt-security" } }) } finally { removeEventListener(t, r), i = fetch } } o && (s["client-binding"] = o, (() => { const t = `${e}=; max-age=0; path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT`; if ("undefined" != typeof location) { const e = new URL(location.href), n = e.hostname.includes("localhost") ? e.hostname : `.${e.hostname}`; document.cookie = `${t}; domain=${n}` } else document.cookie = t })()), addEventListener(t, r) } else window.fetchDynamicModel = () => window.viewerModel.siteFeaturesConfigs.sessionManager.isRunningInDifferentSiteContext ? Promise.resolve({}) : fetch(n, { credentials: "same-origin" }).then((function (e) { if (!e.ok) throw new Error(`[${e.status}]${e.statusText}`); return e.json() })), window.dynamicModelPromise = window.fetchDynamicModel() }();
-      //# sourceMappingURL=https://static.parastorage.com/services/wix-thunderbolt/dist/handleAccessTokens.inline.03fbf59c.bundle.min.js.map</script>
-
-
   <script>
     window.commonConfig = viewerModel.commonConfig
 
-    window.clientSdk = new Proxy({}, { get: (target, prop) => (...args) => window.externalsRegistry.clientSdk.loaded.then(() => window.__clientSdk__[prop](...args)) })
 
   </script>
 
 
   <!-- initCustomElements -->
-  <meta name="wix-dynamic-custom-elements" content="">
 
   <!-- Initial CSS -->
   <style data-url="https://static.parastorage.com/services/wix-thunderbolt/dist/main.359d60e4.min.css">
@@ -484,7 +471,6 @@
       margin: 0 auto;
       min-height: 100%;
       position: relative;
-      top: var(--wix-ads-height)
     }
 
     #site-root img:not([src]) {
@@ -4378,9 +4364,9 @@
         --font_8: normal normal normal 15px/1.4em avenir-lt-w01_35-light1475496, avenir-lt-w05_35-light, sans-serif;
         --font_9: italic normal normal 12px/1.4em georgia, palatino, 'book antiqua', 'palatino linotype', serif;
         --font_10: italic normal normal 11px/1.4em georgia, palatino, 'book antiqua', 'palatino linotype', serif;
-        --wix-ads-height: 50px;
+        --wix-ads-height: 0;
         --sticky-offset: 50px;
-        --wix-ads-top-height: 50px;
+        --wix-ads-top-height: 0;
         --vh-unit: calc((100vh - 50px) / 100);
         --site-width: 980px;
         --above-all-z-index: 100000;
@@ -9883,22 +9869,6 @@
       <div id="SCROLL_TO_TOP" class="Vd6aQZ ignore-focus SCROLL_TO_TOP" tabindex="-1" role="region"
         aria-label="top of page"><span class="mHZSwn">top of page</span></div><button id="SKIP_TO_CONTENT_BTN"
         class="SKIP_TO_CONTENT_BTN LHrbPP has-custom-focus" tabindex="0">Skip to Main Content</button>
-      <div id="WIX_ADS" class="WIX_ADS L27qsU c7bzh_"><a data-testid="linkElement"
-          href="https://www.wix.com/lpviral/enviral?utm_campaign=vir_wixad_live&amp;adsVersion=white&amp;orig_msid=f50c6c92-f0be-4e20-bd70-104faff8915a"
-          target="_blank" rel="nofollow" class="Oxzvyr YD5pSO has-custom-focus"><span class="aGHwBE"><span
-              class="areOb6">This site was designed with the <div data-testid="bannerLogo"
-                style="direction:ltr;display:inline-flex">
-                <div><svg class="e5cW_9" viewBox="0 0 28 10.89" aria-label="wix">
-                    <path
-                      d="M16.02.2c-.55.3-.76.78-.76 2.14a2.17 2.17 0 0 1 .7-.42 3 3 0 0 0 .7-.4A1.62 1.62 0 0 0 17.22 0a3 3 0 0 0-1.18.2z"
-                      class="o4sLYL"></path>
-                    <path
-                      d="M12.77.52a2.12 2.12 0 0 0-.58 1l-1.5 5.8-1.3-4.75a4.06 4.06 0 0 0-.7-1.55 2.08 2.08 0 0 0-2.9 0 4.06 4.06 0 0 0-.7 1.55L3.9 7.32l-1.5-5.8a2.12 2.12 0 0 0-.6-1A2.6 2.6 0 0 0 0 .02l2.9 10.83a3.53 3.53 0 0 0 1.42-.17c.62-.33.92-.57 1.3-2 .33-1.33 1.26-5.2 1.35-5.47a.5.5 0 0 1 .34-.4.5.5 0 0 1 .4.5c.1.3 1 4.2 1.4 5.5.4 1.5.7 1.7 1.3 2a3.53 3.53 0 0 0 1.4.2l2.8-11a2.6 2.6 0 0 0-1.82.53zm4.43 1.26a1.76 1.76 0 0 1-.58.5c-.26.16-.52.26-.8.4a.82.82 0 0 0-.57.82v7.36a2.47 2.47 0 0 0 1.2-.15c.6-.3.75-.6.75-2V1.8zm7.16 3.68L28 .06a3.22 3.22 0 0 0-2.3.42 8.67 8.67 0 0 0-1 1.24l-1.34 1.93a.3.3 0 0 1-.57 0l-1.4-1.93a8.67 8.67 0 0 0-1-1.24 3.22 3.22 0 0 0-2.3-.43l3.6 5.4-3.7 5.4a3.54 3.54 0 0 0 2.32-.48 7.22 7.22 0 0 0 1-1.16l1.33-1.9a.3.3 0 0 1 .57 0l1.37 2a8.2 8.2 0 0 0 1 1.2 3.47 3.47 0 0 0 2.33.5z">
-                    </path>
-                  </svg></div>
-                <div class="uJDaUS">.com</div>
-              </div> website builder. Create your website today.</span><span class="O0tKs2 Oxzvyr">Start
-              Now</span></span></a></div>
       <div id="BACKGROUND_GROUP" class="BACKGROUND_GROUP">
         <div id="pageBackground_c1zeq" data-media-height-override-type="" data-media-position-override="false"
           class="pageBackground_c1zeq BmZ5pC">
