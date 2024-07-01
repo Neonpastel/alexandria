@@ -1,0 +1,199 @@
+body,
+html {
+  background: transparent;
+  border: 0;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  height: 100%;
+}
+
+body {
+  --scrollbar-width: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px
+}
+
+
+body {
+  overflow-x: auto;
+  overflow-y: scroll
+}
+
+body:not(.responsive) #site-root {
+  min-width: var(--site-width);
+  width: 100%
+}
+
+body:not([data-js-loaded]) [data-hide-prejs] {
+  visibility: hidden
+}
+
+#SITE_CONTAINER {
+  position: relative
+}
+
+:root {
+  --one-unit: 1vw;
+  --section-max-width: 9999px
+}
+
+@supports(container-type:inline-size) {
+  :root {
+    --one-unit: 1cqw
+  }
+}
+
+
+
+a,
+abbr,
+acronym,
+address,
+applet,
+b,
+big,
+blockquote,
+button,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+font,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+nav,
+object,
+ol,
+p,
+pre,
+q,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+title,
+tr,
+tt,
+u,
+ul,
+var {
+  background: transparent;
+  border: 0;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline
+}
+
+input,
+select,
+textarea {
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif
+}
+
+ol,
+ul {
+  list-style: none
+}
+
+blockquote,
+q {
+  quotes: none
+}
+
+ins {
+  text-decoration: none
+}
+
+del {
+  text-decoration: line-through
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none
+}
+
+.testStyles {
+  overflow-y: hidden
+}
+
+.reset-button {
+  -webkit-appearance: none;
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  outline: 0;
+  overflow: visible;
+  padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none
+}
+
+:focus {
+  outline: none
+}
+
+.has-click-trigger {
+    cursor: pointer
+  }
+
+
+#site-root {
+  margin: 0 auto;
+  min-height: 100%;
+  position: relative;
+}
+
+#site-root img:not([src]) {
+  visibility: hidden
+}
+
+#site-root svg img:not([src]) {
+  visibility: visible
+}

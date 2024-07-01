@@ -33,403 +33,16 @@
     }
   </script>
 
+  <link rel="stylesheet" href="stylesheet.css">
 
 
-  <!-- initCustomElements -->
 
-  <!-- Initial CSS -->
-  <style data-url="https://static.parastorage.com/services/wix-thunderbolt/dist/main.359d60e4.min.css">
-    body.device-mobile-optimized {
-      overflow-x: hidden;
-      overflow-y: scroll
-    }
-
-    body.device-mobile-optimized:not(.autozoom) #SITE_CONTAINER,
-    body.device-mobile-optimized:not(.responsive) #SITE_CONTAINER {
-      zoom: var(--zoom-factor, 1);
-      margin-left: auto;
-      margin-right: auto;
-      overflow-x: visible;
-      position: relative;
-      width: 320px
-    }
-
-    body.device-mobile-optimized:not(.autozoom):not(.blockSiteScrolling) #SITE_CONTAINER,
-    body.device-mobile-optimized:not(.responsive):not(.blockSiteScrolling) #SITE_CONTAINER {
-      margin-top: 0
-    }
-
-    body.device-mobile-optimized>* {
-      max-width: 100% !important
-    }
-
-    body.device-mobile-optimized #site-root {
-      overflow-x: hidden;
-      overflow-y: hidden
-    }
-
-    @supports(overflow:clip) {
-      body.device-mobile-optimized #site-root {
-        overflow-x: clip;
-        overflow-y: clip
-      }
-    }
-
-    body.device-mobile-non-optimized #SITE_CONTAINER #site-root {
-      overflow-x: hidden;
-      overflow-y: auto
-    }
-
-    body.device-mobile-non-optimized.fullScreenMode {
-      background-color: #5f6360
-    }
-
-    body.device-mobile-non-optimized.fullScreenMode #MOBILE_ACTIONS_MENU,
-    body.device-mobile-non-optimized.fullScreenMode #SITE_BACKGROUND,
-    body.device-mobile-non-optimized.fullScreenMode #site-root,
-    body.fullScreenMode #WIX_ADS {
-      visibility: hidden
-    }
-
-    body.fullScreenMode {
-      overflow-x: hidden !important;
-      overflow-y: hidden !important
-    }
-
-    body.fullScreenMode.device-mobile-optimized #TINY_MENU {
-      opacity: 0;
-      pointer-events: none
-    }
-
-    body.fullScreenMode-scrollable.device-mobile-optimized {
-      overflow-x: hidden !important;
-      overflow-y: auto !important
-    }
-
-    body.fullScreenMode-scrollable.device-mobile-optimized #masterPage,
-    body.fullScreenMode-scrollable.device-mobile-optimized #site-root {
-      overflow-x: hidden !important;
-      overflow-y: hidden !important
-    }
-
-    body.fullScreenMode-scrollable.device-mobile-optimized #SITE_BACKGROUND,
-    body.fullScreenMode-scrollable.device-mobile-optimized #masterPage {
-      height: auto !important
-    }
-
-    body.fullScreenMode-scrollable.device-mobile-optimized #masterPage.mesh-layout {
-      height: 0 !important
-    }
-
-    body.blockSiteScrolling {
-      position: fixed;
-      width: 100%
-    }
-
-    body.blockSiteScrolling #SITE_CONTAINER {
-      margin-top: calc(var(--blocked-site-scroll-margin-top)*-1)
-    }
-
-    body.blockSiteScrolling:not(.responsive) #WIX_ADS {
-      margin-top: var(--blocked-site-scroll-margin-top)
-    }
-
-    body.blockSiteScrollingWithOverflow {
-      overflow-y: hidden
-    }
-
-    @keyframes slide-horizontal-new {
-      0% {
-        transform: translateX(100%)
-      }
-    }
-
-    @keyframes slide-horizontal-old {
-      80% {
-        opacity: 1
-      }
-
-      to {
-        opacity: 0;
-        transform: translateX(-100%)
-      }
-    }
-
-    @keyframes slide-vertical-new {
-      0% {
-        transform: translateY(-100%)
-      }
-    }
-
-    @keyframes slide-vertical-old {
-      80% {
-        opacity: 1
-      }
-
-      to {
-        opacity: 0;
-        transform: translateY(100%)
-      }
-    }
-
-    @keyframes out-in-new {
-      0% {
-        opacity: 0
-      }
-    }
-
-    @keyframes out-in-old {
-      to {
-        opacity: 0
-      }
-    }
-
-    html[data-page-transition=SlideHorizontal]::view-transition-old(page-group) {
-      animation: slide-horizontal-old .6s cubic-bezier(.83, 0, .17, 1) forwards;
-      mix-blend-mode: normal
-    }
-
-    html[data-page-transition=SlideHorizontal]::view-transition-new(page-group) {
-      animation: slide-horizontal-new .6s cubic-bezier(.83, 0, .17, 1) backwards;
-      mix-blend-mode: normal
-    }
-
-    html[data-page-transition=SlideVertical]::view-transition-old(page-group) {
-      animation: slide-vertical-old .6s cubic-bezier(.83, 0, .17, 1) forwards;
-      mix-blend-mode: normal
-    }
-
-    html[data-page-transition=SlideVertical]::view-transition-new(page-group) {
-      animation: slide-vertical-new .6s cubic-bezier(.83, 0, .17, 1) backwards;
-      mix-blend-mode: normal
-    }
-
-    html[data-page-transition=OutIn]::view-transition-old(page-group) {
-      animation: out-in-old .35s cubic-bezier(.64, 0, .78, 0) forwards
-    }
-
-    html[data-page-transition=OutIn]::view-transition-new(page-group) {
-      animation: out-in-new .35s cubic-bezier(.22, 1, .36, 1) .35s backwards
-    }
-
-    @media(prefers-reduced-motion:reduce) {
-
-      ::view-transition-group(*),
-      ::view-transition-new(*),
-      ::view-transition-old(*) {
-        animation: none !important
-      }
-    }
-
-    body,
-    html {
-      background: transparent;
-      border: 0;
-      margin: 0;
-      outline: 0;
-      padding: 0;
-      vertical-align: baseline
-    }
-
-    body {
-      --scrollbar-width: 0px;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 10px
-    }
-
-    body,
-    html {
-      height: 100%
-    }
-
-    body {
-      overflow-x: auto;
-      overflow-y: scroll
-    }
-
-    body:not(.responsive) #site-root {
-      min-width: var(--site-width);
-      width: 100%
-    }
-
-    body:not([data-js-loaded]) [data-hide-prejs] {
-      visibility: hidden
-    }
-
-    #SITE_CONTAINER {
-      position: relative
-    }
-
-    :root {
-      --one-unit: 1vw;
-      --section-max-width: 9999px
-    }
-
-    @supports(container-type:inline-size) {
-      :root {
-        --one-unit: 1cqw
-      }
-    }
-  </style>
-  <style data-url="https://static.parastorage.com/services/wix-thunderbolt/dist/main.renderer.30f71ad7.min.css">
-    a,
-    abbr,
-    acronym,
-    address,
-    applet,
-    b,
-    big,
-    blockquote,
-    button,
-    caption,
-    center,
-    cite,
-    code,
-    dd,
-    del,
-    dfn,
-    div,
-    dl,
-    dt,
-    em,
-    fieldset,
-    font,
-    footer,
-    form,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    header,
-    i,
-    iframe,
-    img,
-    ins,
-    kbd,
-    label,
-    legend,
-    li,
-    nav,
-    object,
-    ol,
-    p,
-    pre,
-    q,
-    s,
-    samp,
-    section,
-    small,
-    span,
-    strike,
-    strong,
-    sub,
-    sup,
-    table,
-    tbody,
-    td,
-    tfoot,
-    th,
-    thead,
-    title,
-    tr,
-    tt,
-    u,
-    ul,
-    var {
-      background: transparent;
-      border: 0;
-      margin: 0;
-      outline: 0;
-      padding: 0;
-      vertical-align: baseline
-    }
-
-    input,
-    select,
-    textarea {
-      box-sizing: border-box;
-      font-family: Helvetica, Arial, sans-serif
-    }
-
-    ol,
-    ul {
-      list-style: none
-    }
-
-    blockquote,
-    q {
-      quotes: none
-    }
-
-    ins {
-      text-decoration: none
-    }
-
-    del {
-      text-decoration: line-through
-    }
-
-    table {
-      border-collapse: collapse;
-      border-spacing: 0
-    }
-
-    a {
-      cursor: pointer;
-      text-decoration: none
-    }
-
-    .testStyles {
-      overflow-y: hidden
-    }
-
-    .reset-button {
-      -webkit-appearance: none;
-      background: none;
-      border: 0;
-      color: inherit;
-      font: inherit;
-      line-height: normal;
-      outline: 0;
-      overflow: visible;
-      padding: 0;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none
-    }
-
-    :focus {
-      outline: none
-    }
-
-    #site-root {
-      margin: 0 auto;
-      min-height: 100%;
-      position: relative;
-    }
-
-    #site-root img:not([src]) {
-      visibility: hidden
-    }
-
-    #site-root svg img:not([src]) {
-      visibility: visible
-    }
-
-    .auto-generated-link {
-      color: inherit
-    }
-
+  <style>
     #SCROLL_TO_BOTTOM,
     #SCROLL_TO_TOP {
       height: 0
     }
 
-    .has-click-trigger {
-      cursor: pointer
-    }
 
     .fullScreenOverlay {
       bottom: 0;
@@ -9637,7 +9250,7 @@
         <div id="pageBackground_c1zeq" data-media-height-override-type="" data-media-position-override="false"
           class="pageBackground_c1zeq BmZ5pC">
           <div id="bgLayers_pageBackground_c1zeq" data-hook="bgLayers" data-motion-part="BG_LAYER" class="MW5IWV">
-            <div data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div>
+            <div  class="LWbAav Kv1aVt"></div>
             <div id="bgMedia_pageBackground_c1zeq" data-motion-part="BG_MEDIA" class="VgO9Yg"></div>
           </div>
         </div>
@@ -9646,17 +9259,17 @@
         <div id="masterPage" class="mesh-layout remove-wrappers masterPage css-editing-scope">
           <header id="SITE_HEADER" class="xU8fqS SITE_HEADER wixui-header" tabindex="-1">
             <div class="_C0cVf">
-              <div class="_4XcTfy" data-testid="screenWidthContainerBg"></div>
+              <div class="_4XcTfy" ></div>
             </div>
             <div class="U4Bvut">
               <div class="G5K6X8">
-                <div class="gUbusX" data-testid="screenWidthContainerBgCenter"></div>
+                <div class="gUbusX" ></div>
               </div>
               <div class="CJF7A2">
-                <div data-mesh-id="SITE_HEADERinlineContent" data-testid="inline-content" class="">
-                  <div data-mesh-id="SITE_HEADERinlineContent-gridContainer" data-testid="mesh-container-content">
+                <div data-mesh-id="SITE_HEADERinlineContent"  class="">
+                  <div data-mesh-id="SITE_HEADERinlineContent-gridContainer" >
                     <div id="comp-knlqsrh0" class="HcOXKn c9GqVL QxJLC3 comp-knlqsrh0 wixui-rich-text"
-                      data-testid="richTextElement">
+                      >
                       <h2 class="font_2 wixui-rich-text__text" style="font-size:12px; line-height:normal;"><span
                           class="color_36 wixui-rich-text__text"><span style="letter-spacing:normal;"
                             class="wixui-rich-text__text"><span style="font-size:12px;"
@@ -9670,8 +9283,8 @@
                         aria-label="Site">
                         <ul class="StylableHorizontalMenu3372578893__menu">
                           <li class="itemDepth02233374943__itemWrapper wixui-horizontal-menu__item"
-                            data-testid="menuItemDepth0" data-item-depth="0" data-is-current="true" aria-current="true">
-                            <a data-item-label="true" data-testid="linkElement"
+                             data-item-depth="0" data-is-current="true" aria-current="true">
+                            <a data-item-label="true" 
                               href="https://alexandriavaneekelen.wixsite.com/portfolio" target="_self"
                               class="itemDepth02233374943__root itemDepth02233374943--isCurrentPage StylableHorizontalMenu3372578893__menuItem"
                               tabindex="0">
@@ -9690,52 +9303,52 @@
           <main id="PAGES_CONTAINER" class="PAGES_CONTAINER" tabindex="-1" data-main-content="true">
             <div id="SITE_PAGES" class="JsJXaX SITE_PAGES">
               <div id="c1zeq" class="dBAkHi c1zeq">
-                <div class="PFkO7r wixui-page" data-testid="page-bg"></div>
+                <div class="PFkO7r wixui-page" ></div>
                 <div class="HT5ybB">
                   <div id="Containerc1zeq" class="Containerc1zeq SPY_vo">
-                    <div data-mesh-id="Containerc1zeqinlineContent" data-testid="inline-content" class="">
+                    <div data-mesh-id="Containerc1zeqinlineContent"  class="">
                       <div data-mesh-id="Containerc1zeqinlineContent-gridContainer"
-                        data-testid="mesh-container-content">
+                        >
                         <section id="comp-lggll355" tabindex="-1" class="Oqnisf comp-lggll355 wixui-section"
                           data-block-level-container="ClassicSection">
                           <div id="bgLayers_comp-lggll355" data-hook="bgLayers" data-motion-part="BG_LAYER"
                             class="MW5IWV">
-                            <div data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div>
+                            <div  class="LWbAav Kv1aVt"></div>
                             <div id="bgMedia_comp-lggll355" data-motion-part="BG_MEDIA" class="VgO9Yg"></div>
                           </div>
-                          <div data-mesh-id="comp-lggll355inlineContent" data-testid="inline-content" class="">
+                          <div data-mesh-id="comp-lggll355inlineContent"  class="">
                             <div data-mesh-id="comp-lggll355inlineContent-gridContainer"
-                              data-testid="mesh-container-content">
+                              >
                               <section id="comp-ldn27fpq" class="comp-ldn27fpq CohWsy wixui-column-strip">
                                 <div id="bgLayers_comp-ldn27fpq" data-hook="bgLayers" data-motion-part="BG_LAYER"
                                   class="if7Vw2">
-                                  <div data-testid="colorUnderlay" class="tcElKx i1tH8h"></div>
+                                  <div  class="tcElKx i1tH8h"></div>
                                   <div id="bgMedia_comp-ldn27fpq" data-motion-part="BG_MEDIA" class="wG8dni"></div>
                                 </div>
-                                <div class="VXAmO2 UORcXs" data-testid="top-divider">
-                                  <div style="--divider-layer-i:0" class="dy3w_9" data-testid="divider-layer-0"
+                                <div class="VXAmO2 UORcXs" >
+                                  <div style="--divider-layer-i:0" class="dy3w_9" 
                                     data-divider-layer="0"></div>
                                 </div>
-                                <div data-testid="columns" class="V5AUxf">
+                                <div  class="V5AUxf">
                                   <div id="comp-ldn27fqv" class="comp-ldn27fqv YzqVVZ wixui-column-strip__column">
                                     <div id="bgLayers_comp-ldn27fqv" data-hook="bgLayers" data-motion-part="BG_LAYER"
                                       class="MW5IWV">
-                                      <div data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div>
+                                      <div  class="LWbAav Kv1aVt"></div>
                                       <div id="bgMedia_comp-ldn27fqv" data-motion-part="BG_MEDIA" class="VgO9Yg"></div>
                                     </div>
-                                    <div data-mesh-id="comp-ldn27fqvinlineContent" data-testid="inline-content"
+                                    <div data-mesh-id="comp-ldn27fqvinlineContent" 
                                       class="">
                                       <div data-mesh-id="comp-ldn27fqvinlineContent-gridContainer"
-                                        data-testid="mesh-container-content">
+                                        >
                                         <div id="comp-ldn2zpff" class="KaEeLN comp-ldn2zpff">
-                                          <div class="uYj0Sg wixui-box" data-testid="container-bg"></div>
-                                          <div data-mesh-id="comp-ldn2zpffinlineContent" data-testid="inline-content"
+                                          <div class="uYj0Sg wixui-box" ></div>
+                                          <div data-mesh-id="comp-ldn2zpffinlineContent" 
                                             class="">
                                             <div data-mesh-id="comp-ldn2zpffinlineContent-gridContainer"
-                                              data-testid="mesh-container-content">
+                                              >
                                               <div id="comp-knlmqtpr"
                                                 class="HcOXKn c9GqVL QxJLC3 comp-knlmqtpr wixui-rich-text"
-                                                data-testid="richTextElement">
+                                                >
                                                 <h2 class="font_2 wixui-rich-text__text"
                                                   style="font-size:56px; line-height:0.5em;"><span
                                                     style="font-size:27px;" class="wixui-rich-text__text"><span
@@ -9753,7 +9366,7 @@
                                                 </h2>
                                               </div>
                                               <div id="comp-ldnb0y97" class="comp-ldnb0y97 wixui-vector-image">
-                                                <div data-testid="svgRoot-comp-ldnb0y97"
+                                                <div 
                                                   class="svgContainer TcoJIb comp-ldnb0y97">
                                                   <!--?xml version="1.0" encoding="UTF-8"?-->
                                                   <svg preserveAspectRatio="none"
@@ -9770,13 +9383,13 @@
                                                 </div>
                                               </div>
                                               <div id="comp-ldnbdq8t" class="KaEeLN comp-ldnbdq8t">
-                                                <div class="uYj0Sg wixui-box" data-testid="container-bg"></div>
+                                                <div class="uYj0Sg wixui-box" ></div>
                                                 <div data-mesh-id="comp-ldnbdq8tinlineContent"
-                                                  data-testid="inline-content" class="">
+                                                   class="">
                                                   <div data-mesh-id="comp-ldnbdq8tinlineContent-gridContainer"
-                                                    data-testid="mesh-container-content">
+                                                    >
                                                     <div id="comp-ldnc2ln5" class="MazNVa comp-ldnc2ln5 wixui-image">
-                                                      <div data-testid="linkElement" class="j7pOnl"><wow-image
+                                                      <div  class="j7pOnl"><wow-image
                                                           id="img_comp-ldnc2ln5" class="HlRz5e BI8PVQ"
                                                           data-image-info="{&quot;containerId&quot;:&quot;comp-ldnc2ln5&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:829,&quot;targetHeight&quot;:54,&quot;isLQIP&quot;:false,&quot;imageData&quot;:{&quot;width&quot;:829,&quot;height&quot;:54,&quot;uri&quot;:&quot;8465a0_a9ff8d0bb7b74101a9384b68af5dc4f2~mv2.png&quot;,&quot;name&quot;:&quot;horTextBlock.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}"
                                                           data-bg-effect-name="" data-has-ssr-src=""><img
@@ -9794,14 +9407,14 @@
                                           </div>
                                         </div>
                                         <div id="comp-ldn3d8qr" class="KaEeLN comp-ldn3d8qr">
-                                          <div class="uYj0Sg wixui-box" data-testid="container-bg"></div>
-                                          <div data-mesh-id="comp-ldn3d8qrinlineContent" data-testid="inline-content"
+                                          <div class="uYj0Sg wixui-box" ></div>
+                                          <div data-mesh-id="comp-ldn3d8qrinlineContent" 
                                             class="">
                                             <div data-mesh-id="comp-ldn3d8qrinlineContent-gridContainer"
-                                              data-testid="mesh-container-content">
+                                              >
                                               <div id="comp-knlox3151"
                                                 class="HcOXKn c9GqVL QxJLC3 comp-knlox3151 wixui-rich-text"
-                                                data-testid="richTextElement">
+                                                >
                                                 <p class="font_8 wixui-rich-text__text"
                                                   style="font-size:14px; line-height:normal; text-align:center;"><span
                                                     style="font-size:14px;" class="wixui-rich-text__text"><span
@@ -9894,7 +9507,7 @@
                                               <div id="comp-knlozecw" class="comp-knlozecw WzbAF8">
                                                 <ul class="mpGTIt" aria-label="Social Bar">
                                                   <li id="dataItem-knlp2npq-comp-knlozecw" class="O6KwRn"><a
-                                                      data-testid="linkElement" href="https://shoebby.itch.io/"
+                                                       href="https://shoebby.itch.io/"
                                                       target="_blank" rel="noreferrer noopener" class="oRtuWN"
                                                       aria-label="itch.io logo"><wow-image id="img_0_comp-knlozecw"
                                                         class="HlRz5e YaS0jR"
@@ -9907,7 +9520,7 @@
                                                           src="originalassets/8465a0_58126cd3b8dc4f6a9ba2ab4ad6cd5eee~mv2.webp"></wow-image></a>
                                                   </li>
                                                   <li id="dataItem-knlp2npr-comp-knlozecw" class="O6KwRn"><a
-                                                      data-testid="linkElement"
+                                                      
                                                       href="https://www.linkedin.com/in/alexandria-van-eekelen-257337158/"
                                                       target="_blank" rel="noreferrer noopener" class="oRtuWN"
                                                       aria-label="linked in logo"><wow-image id="img_1_comp-knlozecw"
@@ -9921,7 +9534,7 @@
                                                           src="originalassets/8465a0_928cb7e126ca40eb93c633c8b6967ec5~mv2.webp"></wow-image></a>
                                                   </li>
                                                   <li id="dataItem-knlozeey1-comp-knlozecw" class="O6KwRn"><a
-                                                      data-testid="linkElement"
+                                                      
                                                       href="https://www.youtube.com/channel/UC3t7RRbgqF_lBmDu78F0LOw"
                                                       target="_blank" rel="noreferrer noopener" class="oRtuWN"
                                                       aria-label="youtube logo"><wow-image id="img_2_comp-knlozecw"
@@ -9935,7 +9548,7 @@
                                                           src="originalassets/8465a0_b427167600cd4ff0aab89753f3ea489f~mv2.webp"></wow-image></a>
                                                   </li>
                                                   <li id="dataItem-knlozeex-comp-knlozecw" class="O6KwRn"><a
-                                                      data-testid="linkElement"
+                                                      
                                                       href="https://twitter.com/PAINWAREARTISAN" target="_blank"
                                                       rel="noreferrer noopener" class="oRtuWN"
                                                       aria-label="twitter logo"><wow-image id="img_3_comp-knlozecw"
@@ -9951,16 +9564,16 @@
                                                 </ul>
                                               </div>
                                               <div id="comp-len05ydq" class="comp-len05ydq"
-                                                data-semantic-classname="button"><a data-testid="linkElement"
+                                                data-semantic-classname="button"><a 
                                                   href="https://shoebby.newgrounds.com/art/" target="_blank"
                                                   rel="noreferrer noopener"
                                                   class="StylableButton2545352419__root style-len06nuq__root wixui-button StylableButton2545352419__link"
                                                   aria-label="Note">
                                                   <div class="StylableButton2545352419__container"><span
                                                       class="StylableButton2545352419__label wixui-button__label"
-                                                      data-testid="stylablebutton-label">Note</span><span
+                                                      >Note</span><span
                                                       class="StylableButton2545352419__icon wixui-button__icon"
-                                                      aria-hidden="true" data-testid="stylablebutton-icon">
+                                                      aria-hidden="true" >
                                                       <div><!--?xml version="1.0" encoding="UTF-8"?-->
                                                         <svg data-bbox="25.783 11.712 137 160" viewBox="0 0 200 200"
                                                           height="200" width="200" xmlns="http://www.w3.org/2000/svg"
@@ -9975,16 +9588,16 @@
                                                     </span></div>
                                                 </a></div>
                                               <div id="comp-len02fo5" class="comp-len02fo5"
-                                                data-semantic-classname="button"><a data-testid="linkElement"
+                                                data-semantic-classname="button"><a 
                                                   href="https://soundcloud.com/shoebby" target="_blank"
                                                   rel="noreferrer noopener"
                                                   class="StylableButton2545352419__root style-len076d5__root wixui-button StylableButton2545352419__link"
                                                   aria-label="Note">
                                                   <div class="StylableButton2545352419__container"><span
                                                       class="StylableButton2545352419__label wixui-button__label"
-                                                      data-testid="stylablebutton-label">Note</span><span
+                                                      >Note</span><span
                                                       class="StylableButton2545352419__icon wixui-button__icon"
-                                                      aria-hidden="true" data-testid="stylablebutton-icon">
+                                                      aria-hidden="true" >
                                                       <div><!--?xml version="1.0" encoding="UTF-8"?-->
                                                         <svg data-bbox="24.5 20 151 160.001" viewBox="0 0 200 200"
                                                           height="200" width="200" xmlns="http://www.w3.org/2000/svg"
@@ -10002,7 +9615,7 @@
                                           </div>
                                         </div>
                                         <div id="comp-ldugnzo4" class="LjV9wd comp-ldugnzo4 wixui-image">
-                                          <div data-testid="linkElement" class="Ikn7zx"><wow-image
+                                          <div  class="Ikn7zx"><wow-image
                                               id="img_comp-ldugnzo4" class="HlRz5e BJSaf1"
                                               data-image-info="{&quot;containerId&quot;:&quot;comp-ldugnzo4&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:542,&quot;targetHeight&quot;:38,&quot;isLQIP&quot;:false,&quot;imageData&quot;:{&quot;width&quot;:544,&quot;height&quot;:40,&quot;uri&quot;:&quot;8465a0_5a99e2af38a149e99171af5c86767b6c~mv2.gif&quot;,&quot;name&quot;:&quot;marquee text_corr.gif&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}"
                                               data-bg-effect-name="" data-has-ssr-src=""
@@ -10013,13 +9626,13 @@
                                                 fetchpriority="high"></wow-image></div>
                                         </div>
                                         <div id="comp-ldn8xusd" class="KaEeLN comp-ldn8xusd">
-                                          <div class="uYj0Sg wixui-box" data-testid="container-bg"></div>
-                                          <div data-mesh-id="comp-ldn8xusdinlineContent" data-testid="inline-content"
+                                          <div class="uYj0Sg wixui-box" ></div>
+                                          <div data-mesh-id="comp-ldn8xusdinlineContent" 
                                             class="">
                                             <div data-mesh-id="comp-ldn8xusdinlineContent-gridContainer"
-                                              data-testid="mesh-container-content">
+                                              >
                                               <div id="comp-ldteiabx" class="MazNVa comp-ldteiabx wixui-image">
-                                                <div data-testid="linkElement" class="j7pOnl"><wow-image
+                                                <div  class="j7pOnl"><wow-image
                                                     id="img_comp-ldteiabx" class="HlRz5e BI8PVQ"
                                                     data-image-info="{&quot;containerId&quot;:&quot;comp-ldteiabx&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:544,&quot;targetHeight&quot;:171,&quot;isLQIP&quot;:false,&quot;imageData&quot;:{&quot;width&quot;:544,&quot;height&quot;:171,&quot;uri&quot;:&quot;8465a0_ffc9aade2f5e45ecb01d912055284f8f~mv2.png&quot;,&quot;name&quot;:&quot;contactme.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}"
                                                     data-bg-effect-name="" data-has-ssr-src=""><img
@@ -10031,7 +9644,7 @@
                                                       fetchpriority="high"></wow-image></div>
                                               </div>
                                               <div id="comp-ldtb4bly" class="comp-ldtb4bly wixui-vector-image">
-                                                <div data-testid="svgRoot-comp-ldtb4bly"
+                                                <div 
                                                   class="svgContainer TcoJIb comp-ldtb4bly"><svg
                                                     preserveAspectRatio="xMidYMid meet" data-bbox="35 56 130 88"
                                                     viewBox="35 56 130 88" height="200" width="200"
@@ -10054,7 +9667,7 @@
                                               </div>
                                               <div id="comp-ldtb569q"
                                                 class="HcOXKn c9GqVL QxJLC3 comp-ldtb569q wixui-rich-text"
-                                                data-testid="richTextElement">
+                                                >
                                                 <p class="font_8 wixui-rich-text__text" style="font-size:15px;"><span
                                                     style="text-decoration:underline;" class="wixui-rich-text__text"><a
                                                       href="mailto:alexandria.vaneekelen@gmail.com" target="_self"
@@ -10064,7 +9677,7 @@
                                               </div>
                                               <div id="comp-ldtb3n1a" class="MazNVa comp-ldtb3n1a wixui-image"
                                                 title="pinpng.com-discord-icon-png-283159.png">
-                                                <div data-testid="linkElement" class="j7pOnl"><wow-image
+                                                <div  class="j7pOnl"><wow-image
                                                     id="img_comp-ldtb3n1a" class="HlRz5e BI8PVQ"
                                                     data-image-info="{&quot;containerId&quot;:&quot;comp-ldtb3n1a&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:25,&quot;targetHeight&quot;:29,&quot;isLQIP&quot;:false,&quot;imageData&quot;:{&quot;width&quot;:2400,&quot;height&quot;:2747,&quot;uri&quot;:&quot;8465a0_4e2a87b47f4344a2bc85b1cd308fc544~mv2.png&quot;,&quot;name&quot;:&quot;&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}"
                                                     data-bg-effect-name="" data-has-ssr-src=""><img
@@ -10076,7 +9689,7 @@
                                               </div>
                                               <div id="comp-ldtb4j9j"
                                                 class="HcOXKn c9GqVL QxJLC3 comp-ldtb4j9j wixui-rich-text"
-                                                data-testid="richTextElement">
+                                                >
                                                 <p class="font_8 wixui-rich-text__text" style="font-size:15px;">
                                                   shoebby#1212</p>
                                               </div>
@@ -10084,13 +9697,13 @@
                                           </div>
                                         </div>
                                         <div id="comp-ldn8x1ht" class="KaEeLN comp-ldn8x1ht">
-                                          <div class="uYj0Sg wixui-box" data-testid="container-bg"></div>
-                                          <div data-mesh-id="comp-ldn8x1htinlineContent" data-testid="inline-content"
+                                          <div class="uYj0Sg wixui-box" ></div>
+                                          <div data-mesh-id="comp-ldn8x1htinlineContent" 
                                             class="">
                                             <div data-mesh-id="comp-ldn8x1htinlineContent-gridContainer"
-                                              data-testid="mesh-container-content">
+                                              >
                                               <div id="comp-ldna5ple" class="MazNVa comp-ldna5ple wixui-image">
-                                                <div data-testid="linkElement" class="j7pOnl"><wow-image
+                                                <div  class="j7pOnl"><wow-image
                                                     id="img_comp-ldna5ple" class="HlRz5e BI8PVQ"
                                                     data-image-info="{&quot;containerId&quot;:&quot;comp-ldna5ple&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:60,&quot;targetHeight&quot;:582,&quot;isLQIP&quot;:false,&quot;imageData&quot;:{&quot;width&quot;:60,&quot;height&quot;:565,&quot;uri&quot;:&quot;8465a0_954f1f8bb6714a008f4d6c6f4d9e6d41~mv2.png&quot;,&quot;name&quot;:&quot;verticalTextBlock.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}"
                                                     data-bg-effect-name="" data-has-ssr-src=""><img
@@ -10105,22 +9718,22 @@
                                           </div>
                                         </div>
                                         <div id="comp-ldn3doil" class="KaEeLN comp-ldn3doil">
-                                          <div class="uYj0Sg wixui-box" data-testid="container-bg"></div>
-                                          <div data-mesh-id="comp-ldn3doilinlineContent" data-testid="inline-content"
+                                          <div class="uYj0Sg wixui-box" ></div>
+                                          <div data-mesh-id="comp-ldn3doilinlineContent" 
                                             class="">
                                             <div data-mesh-id="comp-ldn3doilinlineContent-gridContainer"
-                                              data-testid="mesh-container-content"></div>
+                                              ></div>
                                           </div>
                                         </div>
                                         <div id="comp-ldn3dy9o" class="KaEeLN comp-ldn3dy9o">
-                                          <div class="uYj0Sg wixui-box" data-testid="container-bg"></div>
-                                          <div data-mesh-id="comp-ldn3dy9oinlineContent" data-testid="inline-content"
+                                          <div class="uYj0Sg wixui-box" ></div>
+                                          <div data-mesh-id="comp-ldn3dy9oinlineContent" 
                                             class="">
                                             <div data-mesh-id="comp-ldn3dy9oinlineContent-gridContainer"
-                                              data-testid="mesh-container-content">
+                                              >
                                               <div id="comp-ldtaxuzx"
                                                 class="HcOXKn c9GqVL QxJLC3 comp-ldtaxuzx wixui-rich-text"
-                                                data-testid="richTextElement">
+                                                >
                                                 <h2 class="font_2 wixui-rich-text__text"
                                                   style="font-size:19px; line-height:normal; text-align:center;"><span
                                                     style="font-size:19px;" class="wixui-rich-text__text"><span
@@ -10133,12 +9746,12 @@
                                               </div>
                                               <div class="comp-ldtapm9v FubTgk" id="comp-ldtapm9v" role="button"
                                                 tabindex="0" aria-disabled="false">
-                                                <div data-testid="linkElement" class="uDW_Qe wixui-button PlZyDq"
+                                                <div  class="uDW_Qe wixui-button PlZyDq"
                                                   aria-disabled="false"><span
                                                     class="l7_2fn wixui-button__label">Dutch</span></div>
                                               </div>
                                               <div class="comp-ldtapmab FubTgk" id="comp-ldtapmab"
-                                                aria-disabled="false"><a data-testid="linkElement"
+                                                aria-disabled="false"><a 
                                                   href="https://f50c6c92-f0be-4e20-bd70-104faff8915a.filesusr.com/ugd/8465a0_ebcb9f5c5b7a489e800c38880c5ec9e2.pdf"
                                                   target="_blank" class="uDW_Qe wixui-button PlZyDq"
                                                   aria-disabled="false"><span
@@ -10147,13 +9760,13 @@
                                           </div>
                                         </div>
                                         <div id="comp-ldn3aia1" class="KaEeLN comp-ldn3aia1">
-                                          <div class="uYj0Sg wixui-box" data-testid="container-bg"></div>
-                                          <div data-mesh-id="comp-ldn3aia1inlineContent" data-testid="inline-content"
+                                          <div class="uYj0Sg wixui-box" ></div>
+                                          <div data-mesh-id="comp-ldn3aia1inlineContent" 
                                             class="">
                                             <div data-mesh-id="comp-ldn3aia1inlineContent-gridContainer"
-                                              data-testid="mesh-container-content">
+                                              >
                                               <div id="comp-ldta64u4" class="MazNVa comp-ldta64u4 wixui-image">
-                                                <div data-testid="linkElement" class="j7pOnl"><wow-image
+                                                <div  class="j7pOnl"><wow-image
                                                     id="img_comp-ldta64u4" class="HlRz5e BI8PVQ"
                                                     data-image-info="{&quot;containerId&quot;:&quot;comp-ldta64u4&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:780,&quot;targetHeight&quot;:54,&quot;isLQIP&quot;:false,&quot;imageData&quot;:{&quot;width&quot;:780,&quot;height&quot;:54,&quot;uri&quot;:&quot;8465a0_be30f749d9f2423d86bc50af4cf4c1a9~mv2.png&quot;,&quot;name&quot;:&quot;toolbelt.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}"
                                                     data-bg-effect-name="" data-has-ssr-src=""><img
@@ -10185,71 +9798,71 @@
                                                 <div
                                                   class="TabsList2027980309__tab TabsList2027980309--current wixui-tabs__item"
                                                   id="tab-comp-lggllpjg" data-hook="tab-item"
-                                                  data-testid="ActiveTabItem" data-idx="0" role="tab" tabindex="0"
+                                                   data-idx="0" role="tab" tabindex="0"
                                                   aria-current="true"><span class="TabsList2027980309__label"
                                                     data-hook="tab-item-label">The Anders Cyclopaedia</span></div>
                                                 <div class="TabsList2027980309__tab wixui-tabs__item"
-                                                  id="tab-comp-lqxwdkz0" data-hook="tab-item" data-testid="false"
+                                                  id="tab-comp-lqxwdkz0" data-hook="tab-item" 
                                                   data-idx="1" role="tab" tabindex="-2" aria-current="false"><span
                                                     class="TabsList2027980309__label"
                                                     data-hook="tab-item-label">ONEIRO(PHOBIA/PHRENIA)</span></div>
                                                 <div class="TabsList2027980309__tab wixui-tabs__item"
-                                                  id="tab-comp-ldn5zv5y" data-hook="tab-item" data-testid="false"
+                                                  id="tab-comp-ldn5zv5y" data-hook="tab-item" 
                                                   data-idx="2" role="tab" tabindex="-2" aria-current="false"><span
                                                     class="TabsList2027980309__label"
                                                     data-hook="tab-item-label">Internship Unexplored 2</span></div>
                                                 <div class="TabsList2027980309__tab wixui-tabs__item"
-                                                  id="tab-comp-ldn4a0f8" data-hook="tab-item" data-testid="false"
+                                                  id="tab-comp-ldn4a0f8" data-hook="tab-item" 
                                                   data-idx="3" role="tab" tabindex="-2" aria-current="false"><span
                                                     class="TabsList2027980309__label" data-hook="tab-item-label">The
                                                     Puppeteer's Troupe</span></div>
                                                 <div class="TabsList2027980309__tab wixui-tabs__item"
-                                                  id="tab-comp-ldn5zklq" data-hook="tab-item" data-testid="false"
+                                                  id="tab-comp-ldn5zklq" data-hook="tab-item" 
                                                   data-idx="4" role="tab" tabindex="-2" aria-current="false"><span
                                                     class="TabsList2027980309__label"
                                                     data-hook="tab-item-label">Maintenance</span></div>
                                                 <div class="TabsList2027980309__tab wixui-tabs__item"
-                                                  id="tab-comp-ldn6cma3" data-hook="tab-item" data-testid="false"
+                                                  id="tab-comp-ldn6cma3" data-hook="tab-item" 
                                                   data-idx="5" role="tab" tabindex="-2" aria-current="false"><span
                                                     class="TabsList2027980309__label" data-hook="tab-item-label">The
                                                     Pluimer Complex</span></div>
                                                 <div class="TabsList2027980309__tab wixui-tabs__item"
-                                                  id="tab-comp-ldn5zwkb" data-hook="tab-item" data-testid="false"
+                                                  id="tab-comp-ldn5zwkb" data-hook="tab-item" 
                                                   data-idx="6" role="tab" tabindex="-2" aria-current="false"><span
                                                     class="TabsList2027980309__label"
                                                     data-hook="tab-item-label">KLÖR</span></div>
                                                 <div class="TabsList2027980309__tab wixui-tabs__item"
-                                                  id="tab-comp-ldn60fu4" data-hook="tab-item" data-testid="false"
+                                                  id="tab-comp-ldn60fu4" data-hook="tab-item" 
                                                   data-idx="7" role="tab" tabindex="-2" aria-current="false"><span
                                                     class="TabsList2027980309__label" data-hook="tab-item-label">Call of
                                                     the Cars</span></div>
                                                 <div class="TabsList2027980309__tab wixui-tabs__item"
-                                                  id="tab-comp-ldn61gme" data-hook="tab-item" data-testid="false"
+                                                  id="tab-comp-ldn61gme" data-hook="tab-item" 
                                                   data-idx="8" role="tab" tabindex="-2" aria-current="false"><span
                                                     class="TabsList2027980309__label"
                                                     data-hook="tab-item-label">WTVSR</span></div>
                                                 <div class="TabsList2027980309__tab wixui-tabs__item"
-                                                  id="tab-comp-ldn61v6w" data-hook="tab-item" data-testid="false"
+                                                  id="tab-comp-ldn61v6w" data-hook="tab-item" 
                                                   data-idx="9" role="tab" tabindex="-2" aria-current="false"><span
                                                     class="TabsList2027980309__label" data-hook="tab-item-label">Fishy
                                                     Friends!</span></div>
                                                 <div class="TabsList2027980309__tab wixui-tabs__item"
-                                                  id="tab-comp-ldn620to" data-hook="tab-item" data-testid="false"
+                                                  id="tab-comp-ldn620to" data-hook="tab-item" 
                                                   data-idx="10" role="tab" tabindex="-2" aria-current="false"><span
                                                     class="TabsList2027980309__label"
                                                     data-hook="tab-item-label">NSMC</span></div>
                                                 <div class="TabsList2027980309__tab wixui-tabs__item"
-                                                  id="tab-comp-ldn62cpc" data-hook="tab-item" data-testid="false"
+                                                  id="tab-comp-ldn62cpc" data-hook="tab-item" 
                                                   data-idx="11" role="tab" tabindex="-2" aria-current="false"><span
                                                     class="TabsList2027980309__label" data-hook="tab-item-label">Warpman
                                                     Sam</span></div>
                                                 <div class="TabsList2027980309__tab wixui-tabs__item"
-                                                  id="tab-comp-ldn62j2x" data-hook="tab-item" data-testid="false"
+                                                  id="tab-comp-ldn62j2x" data-hook="tab-item" 
                                                   data-idx="12" role="tab" tabindex="-2" aria-current="false"><span
                                                     class="TabsList2027980309__label" data-hook="tab-item-label">FPS
                                                     Level Design</span></div>
                                                 <div class="TabsList2027980309__tab wixui-tabs__item"
-                                                  id="tab-comp-ldn63fng" data-hook="tab-item" data-testid="false"
+                                                  id="tab-comp-ldn63fng" data-hook="tab-item" 
                                                   data-idx="13" role="tab" tabindex="-2" aria-current="false"><span
                                                     class="TabsList2027980309__label"
                                                     data-hook="tab-item-label">Connections</span></div>
@@ -10272,11 +9885,11 @@
                                                 data-hook="TabPanel">
                                                 <div id="comp-ldn4a0f8" class="comp-ldn4a0f8">
                                                   <div data-mesh-id="comp-ldn4a0f8inlineContent"
-                                                    data-testid="inline-content" class="">
+                                                     class="">
                                                     <div data-mesh-id="comp-ldn4a0f8inlineContent-gridContainer"
-                                                      data-testid="mesh-container-content">
+                                                      >
                                                       <div id="comp-ldn4a0f9" class="MazNVa comp-ldn4a0f9 wixui-image">
-                                                        <div data-testid="linkElement" class="j7pOnl"><wow-image
+                                                        <div  class="j7pOnl"><wow-image
                                                             id="img_comp-ldn4a0f9" class="HlRz5e BI8PVQ"
                                                             data-image-info="{&quot;containerId&quot;:&quot;comp-ldn4a0f9&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:253,&quot;targetHeight&quot;:305,&quot;isLQIP&quot;:false,&quot;imageData&quot;:{&quot;width&quot;:2000,&quot;height&quot;:2000,&quot;uri&quot;:&quot;8465a0_0ec8391c99384b6983622784c92c00dd~mv2.png&quot;,&quot;name&quot;:&quot;exposure project title img.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;hasAnimation&quot;:false,&quot;crop&quot;:{&quot;x&quot;:170,&quot;y&quot;:0,&quot;width&quot;:1659,&quot;height&quot;:2000,&quot;svgId&quot;:&quot;909695c1e003409ba70b5561666c7c4d.svg&quot;,&quot;flip&quot;:&quot;xy&quot;}}}"
                                                             data-bg-effect-name="" data-has-ssr-src=""><img
@@ -10289,7 +9902,7 @@
                                                       </div>
                                                       <div id="comp-ldn4a0f93"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn4a0f93 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="line-height:0.5em; font-size:35px;"><span
                                                             style="font-size:18px;" class="wixui-rich-text__text"><span
@@ -10315,7 +9928,7 @@
                                                       </div>
                                                       <div id="comp-ldn4a0fa2"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn4a0fa2 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:23px; line-height:1em;"><span
                                                             style="font-size:23px;" class="wixui-rich-text__text"><span
@@ -10327,7 +9940,7 @@
                                                       </div>
                                                       <div id="comp-ldn4u35l"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn4u35l wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em; text-align:justify;">
                                                           <span style="color:#FFFFFF;"
@@ -10406,7 +10019,7 @@
                                                         class="comp-ldn5kwgu aVng1S wixui-horizontal-line"></div>
                                                       <div id="comp-ldn5gko7"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn5gko7 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:24px; line-height:1em;"><span
                                                             style="font-size:24px;" class="wixui-rich-text__text"><span
@@ -10418,7 +10031,7 @@
                                                       </div>
                                                       <div id="comp-ldn51uex"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn51uex wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="font-weight:bold;" class="wixui-rich-text__text">Game
@@ -10450,7 +10063,7 @@
                                                       </div>
                                                       <div id="comp-ldn5ims1"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn5ims1 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="font-weight:bold;"
@@ -10483,12 +10096,12 @@
                                                 data-hook="TabPanel">
                                                 <div id="comp-ldn5zklq" class="comp-ldn5zklq">
                                                   <div data-mesh-id="comp-ldn5zklqinlineContent"
-                                                    data-testid="inline-content" class="">
+                                                     class="">
                                                     <div data-mesh-id="comp-ldn5zklqinlineContent-gridContainer"
-                                                      data-testid="mesh-container-content">
+                                                      >
                                                       <div id="comp-ldn5zkmn1"
                                                         class="MazNVa comp-ldn5zkmn1 wixui-image">
-                                                        <div data-testid="linkElement" class="j7pOnl"><wow-image
+                                                        <div  class="j7pOnl"><wow-image
                                                             id="img_comp-ldn5zkmn1" class="HlRz5e BI8PVQ"
                                                             data-image-info="{&quot;containerId&quot;:&quot;comp-ldn5zkmn1&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:277,&quot;targetHeight&quot;:333,&quot;isLQIP&quot;:false,&quot;imageData&quot;:{&quot;width&quot;:1039,&quot;height&quot;:582,&quot;uri&quot;:&quot;8465a0_2d29aa2f43874f1b880b0c63a22537f8~mv2.png&quot;,&quot;name&quot;:&quot;hallwayAlone.PNG&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;crop&quot;:{&quot;x&quot;:333,&quot;y&quot;:151,&quot;width&quot;:341,&quot;height&quot;:410,&quot;svgId&quot;:&quot;909695c1e003409ba70b5561666c7c4d.svg&quot;,&quot;flip&quot;:&quot;xy&quot;}}}"
                                                             data-bg-effect-name="" data-has-ssr-src=""><img
@@ -10501,7 +10114,7 @@
                                                       </div>
                                                       <div id="comp-ldn5zkmq3"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn5zkmq3 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:46px; line-height:0.5em;"><span
                                                             style="font-size:29px;" class="wixui-rich-text__text"><span
@@ -10528,7 +10141,7 @@
                                                       </div>
                                                       <div id="comp-ldn5zkmr4"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn5zkmr4 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:23px; line-height:1em;"><span
                                                             style="font-size:23px;" class="wixui-rich-text__text"><span
@@ -10540,7 +10153,7 @@
                                                       </div>
                                                       <div id="comp-ldn5zkms4"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn5zkms4 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="color:#FFFFFF;" class="wixui-rich-text__text"><span
@@ -10615,7 +10228,7 @@
                                                         class="comp-ldn5zkmt4 aVng1S wixui-horizontal-line"></div>
                                                       <div id="comp-ldn5zkmu3"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn5zkmu3 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:24px; line-height:1em;"><span
                                                             style="font-size:24px;" class="wixui-rich-text__text"><span
@@ -10627,7 +10240,7 @@
                                                       </div>
                                                       <div id="comp-ldn5zkmv4"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn5zkmv4 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="font-weight:bold;"
@@ -10683,7 +10296,7 @@
                                                       </div>
                                                       <div id="comp-ldn5zkmw4"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn5zkmw4 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="font-weight:bold;"
@@ -10743,11 +10356,11 @@
                                                 data-hook="TabPanel">
                                                 <div id="comp-ldn5zv5y" class="comp-ldn5zv5y">
                                                   <div data-mesh-id="comp-ldn5zv5yinlineContent"
-                                                    data-testid="inline-content" class="">
+                                                     class="">
                                                     <div data-mesh-id="comp-ldn5zv5yinlineContent-gridContainer"
-                                                      data-testid="mesh-container-content">
+                                                      >
                                                       <div id="comp-ldn5zv76" class="MazNVa comp-ldn5zv76 wixui-image">
-                                                        <div data-testid="linkElement" class="j7pOnl"><wow-image
+                                                        <div  class="j7pOnl"><wow-image
                                                             id="img_comp-ldn5zv76" class="HlRz5e BI8PVQ"
                                                             data-image-info="{&quot;containerId&quot;:&quot;comp-ldn5zv76&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:277,&quot;targetHeight&quot;:333,&quot;isLQIP&quot;:false,&quot;imageData&quot;:{&quot;width&quot;:616,&quot;height&quot;:353,&quot;uri&quot;:&quot;8465a0_dbcd6d1dd118404fb13afeed1ee76c54~mv2.jpg&quot;,&quot;name&quot;:&quot;capsule_616x353.jpg&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;crop&quot;:{&quot;x&quot;:208,&quot;y&quot;:106,&quot;width&quot;:202,&quot;height&quot;:243,&quot;svgId&quot;:&quot;909695c1e003409ba70b5561666c7c4d.svg&quot;,&quot;flip&quot;:&quot;xy&quot;}}}"
                                                             data-bg-effect-name="" data-has-ssr-src=""><img
@@ -10760,7 +10373,7 @@
                                                       </div>
                                                       <div id="comp-ldn5zv771"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn5zv771 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:46px; line-height:0.5em;"><span
                                                             style="font-size:28px;" class="wixui-rich-text__text"><span
@@ -10788,7 +10401,7 @@
                                                       </div>
                                                       <div id="comp-ldn5zv781"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn5zv781 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:23px; line-height:1em;"><span
                                                             style="font-size:23px;" class="wixui-rich-text__text"><span
@@ -10800,7 +10413,7 @@
                                                       </div>
                                                       <div id="comp-ldn5zv791"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn5zv791 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="color:#FFFFFF;" class="wixui-rich-text__text"><span
@@ -10888,7 +10501,7 @@
                                                         class="comp-ldn5zv7a1 aVng1S wixui-horizontal-line"></div>
                                                       <div id="comp-ldn5zv7b2"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn5zv7b2 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:24px; line-height:1em;"><span
                                                             style="font-size:24px;" class="wixui-rich-text__text"><span
@@ -10900,7 +10513,7 @@
                                                       </div>
                                                       <div id="comp-ldn5zv7c3"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn5zv7c3 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="font-weight:bold;"
@@ -10964,7 +10577,7 @@
                                                       </div>
                                                       <div id="comp-ldn5zv7d2"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn5zv7d2 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p style="line-height:1.3em;" class="wixui-rich-text__text">
                                                           <span class="wixGuard wixui-rich-text__text">​</span></p>
 
@@ -11046,12 +10659,12 @@
                                                 data-hook="TabPanel">
                                                 <div id="comp-ldn5zwkb" class="comp-ldn5zwkb">
                                                   <div data-mesh-id="comp-ldn5zwkbinlineContent"
-                                                    data-testid="inline-content" class="">
+                                                     class="">
                                                     <div data-mesh-id="comp-ldn5zwkbinlineContent-gridContainer"
-                                                      data-testid="mesh-container-content">
+                                                      >
                                                       <div id="comp-ldn5zwl72"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn5zwl72 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:46px; line-height:0.5em;"><span
                                                             style="font-size:29px;" class="wixui-rich-text__text"><span
@@ -11077,7 +10690,7 @@
                                                         </h2>
                                                       </div>
                                                       <div id="comp-ldn5zwl6" class="MazNVa comp-ldn5zwl6 wixui-image">
-                                                        <div data-testid="linkElement" class="j7pOnl"><wow-image
+                                                        <div  class="j7pOnl"><wow-image
                                                             id="img_comp-ldn5zwl6" class="HlRz5e BI8PVQ"
                                                             data-image-info="{&quot;containerId&quot;:&quot;comp-ldn5zwl6&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:277,&quot;targetHeight&quot;:166,&quot;isLQIP&quot;:false,&quot;imageData&quot;:{&quot;width&quot;:600,&quot;height&quot;:338,&quot;uri&quot;:&quot;8465a0_646d1eb1227d4ffa81aed1c714d23c8a~mv2.gif&quot;,&quot;name&quot;:&quot;ezgif-7-341f8ae2f26e.gif&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}"
                                                             data-bg-effect-name="" data-has-ssr-src=""
@@ -11090,7 +10703,7 @@
                                                       </div>
                                                       <div id="comp-ldn5zwl81"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn5zwl81 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:23px; line-height:1em;"><span
                                                             style="font-size:23px;" class="wixui-rich-text__text"><span
@@ -11102,7 +10715,7 @@
                                                       </div>
                                                       <div id="comp-ldn5zwl91"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn5zwl91 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="color:#FFFFFF;" class="wixui-rich-text__text"><span
@@ -11211,7 +10824,7 @@
                                                         class="comp-ldn5zwla1 aVng1S wixui-horizontal-line"></div>
                                                       <div id="comp-ldn5zwli1"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn5zwli1 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:24px; line-height:1em;"><span
                                                             style="font-size:24px;" class="wixui-rich-text__text"><span
@@ -11223,7 +10836,7 @@
                                                       </div>
                                                       <div id="comp-ldn5zwlj3"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn5zwlj3 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="font-weight:bold;"
@@ -11300,7 +10913,7 @@
                                                       </div>
                                                       <div id="comp-ldn5zwlk3"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn5zwlk3 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="font-weight:bold;" class="wixui-rich-text__text">UI
@@ -11364,12 +10977,12 @@
                                                 data-hook="TabPanel">
                                                 <div id="comp-ldn60fu4" class="comp-ldn60fu4">
                                                   <div data-mesh-id="comp-ldn60fu4inlineContent"
-                                                    data-testid="inline-content" class="">
+                                                     class="">
                                                     <div data-mesh-id="comp-ldn60fu4inlineContent-gridContainer"
-                                                      data-testid="mesh-container-content">
+                                                      >
                                                       <div id="comp-ldn60fv35"
                                                         class="MazNVa comp-ldn60fv35 wixui-image">
-                                                        <div data-testid="linkElement" class="j7pOnl"><wow-image
+                                                        <div  class="j7pOnl"><wow-image
                                                             id="img_comp-ldn60fv35" class="HlRz5e BI8PVQ"
                                                             data-image-info="{&quot;containerId&quot;:&quot;comp-ldn60fv35&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:277,&quot;targetHeight&quot;:333,&quot;isLQIP&quot;:false,&quot;imageData&quot;:{&quot;width&quot;:1123,&quot;height&quot;:569,&quot;uri&quot;:&quot;8465a0_957f1779cec2486688efcbae0aa7cc16~mv2.gif&quot;,&quot;name&quot;:&quot;CotCsample2.gif&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}"
                                                             data-bg-effect-name="" data-has-ssr-src=""
@@ -11382,7 +10995,7 @@
                                                       </div>
                                                       <div id="comp-ldn60fv5"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn60fv5 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:46px; line-height:0.5em;"><span
                                                             style="font-size:22px;" class="wixui-rich-text__text"><span
@@ -11408,7 +11021,7 @@
                                                       </div>
                                                       <div id="comp-ldn60fv55"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn60fv55 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:22px; line-height:1em;"><span
                                                             style="font-size:22px;" class="wixui-rich-text__text"><span
@@ -11420,7 +11033,7 @@
                                                       </div>
                                                       <div id="comp-ldn60fv64"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn60fv64 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="color:#FFFFFF;" class="wixui-rich-text__text"><span
@@ -11509,7 +11122,7 @@
                                                         class="comp-ldn60fv74 aVng1S wixui-horizontal-line"></div>
                                                       <div id="comp-ldn60fv84"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn60fv84 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:24px; line-height:1em;"><span
                                                             style="font-size:24px;" class="wixui-rich-text__text"><span
@@ -11521,7 +11134,7 @@
                                                       </div>
                                                       <div id="comp-ldn60fv94"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn60fv94 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="font-weight:bold;"
@@ -11596,7 +11209,7 @@
                                                       </div>
                                                       <div id="comp-ldn60fva4"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn60fva4 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="color:#FFFFFF;" class="wixui-rich-text__text"><span
@@ -11681,12 +11294,12 @@
                                                 data-hook="TabPanel">
                                                 <div id="comp-ldn61gme" class="comp-ldn61gme">
                                                   <div data-mesh-id="comp-ldn61gmeinlineContent"
-                                                    data-testid="inline-content" class="">
+                                                     class="">
                                                     <div data-mesh-id="comp-ldn61gmeinlineContent-gridContainer"
-                                                      data-testid="mesh-container-content">
+                                                      >
                                                       <div id="comp-ldn61gnu4"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn61gnu4 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:46px; line-height:0.5em;"><span
                                                             style="font-size:19px;" class="wixui-rich-text__text"><span
@@ -11714,7 +11327,7 @@
                                                       </div>
                                                       <div id="comp-ldn61gnt2"
                                                         class="MazNVa comp-ldn61gnt2 wixui-image">
-                                                        <div data-testid="linkElement" class="j7pOnl"><wow-image
+                                                        <div  class="j7pOnl"><wow-image
                                                             id="img_comp-ldn61gnt2" class="HlRz5e BI8PVQ"
                                                             data-image-info="{&quot;containerId&quot;:&quot;comp-ldn61gnt2&quot;,&quot;displayMode&quot;:&quot;stretch&quot;,&quot;targetWidth&quot;:277,&quot;targetHeight&quot;:178,&quot;isLQIP&quot;:false,&quot;imageData&quot;:{&quot;width&quot;:1103,&quot;height&quot;:618,&quot;uri&quot;:&quot;8465a0_f361ae85f42f42f2813417fcbda70247~mv2.gif&quot;,&quot;name&quot;:&quot;vengefulSpirits.gif&quot;,&quot;displayMode&quot;:&quot;stretch&quot;}}"
                                                             data-bg-effect-name="" data-has-ssr-src=""
@@ -11727,7 +11340,7 @@
                                                       </div>
                                                       <div id="comp-ldn61gnv3"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn61gnv3 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:27px; line-height:1em;"><span
                                                             style="font-size:27px;" class="wixui-rich-text__text"><span
@@ -11739,7 +11352,7 @@
                                                       </div>
                                                       <div id="comp-ldn61gnw2"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn61gnw2 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="color:#FFFFFF;" class="wixui-rich-text__text"><span
@@ -11821,7 +11434,7 @@
                                                         class="comp-ldn61gnx1 aVng1S wixui-horizontal-line"></div>
                                                       <div id="comp-ldn61gny"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn61gny wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:24px; line-height:1em;"><span
                                                             style="font-size:24px;" class="wixui-rich-text__text"><span
@@ -11833,7 +11446,7 @@
                                                       </div>
                                                       <div id="comp-ldn61gnz"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn61gnz wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="font-weight:bold;"
@@ -11872,7 +11485,7 @@
                                                       </div>
                                                       <div id="comp-ldn61gnz5"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn61gnz5 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="font-weight:bold;"
@@ -11935,12 +11548,12 @@
                                                 data-hook="TabPanel">
                                                 <div id="comp-ldn61v6w" class="comp-ldn61v6w">
                                                   <div data-mesh-id="comp-ldn61v6winlineContent"
-                                                    data-testid="inline-content" class="">
+                                                     class="">
                                                     <div data-mesh-id="comp-ldn61v6winlineContent-gridContainer"
-                                                      data-testid="mesh-container-content">
+                                                      >
                                                       <div id="comp-ldn61v891"
                                                         class="MazNVa comp-ldn61v891 wixui-image">
-                                                        <div data-testid="linkElement" class="j7pOnl"><wow-image
+                                                        <div  class="j7pOnl"><wow-image
                                                             id="img_comp-ldn61v891" class="HlRz5e BI8PVQ"
                                                             data-image-info="{&quot;containerId&quot;:&quot;comp-ldn61v891&quot;,&quot;displayMode&quot;:&quot;stretch&quot;,&quot;targetWidth&quot;:277,&quot;targetHeight&quot;:333,&quot;isLQIP&quot;:false,&quot;imageData&quot;:{&quot;width&quot;:516,&quot;height&quot;:518,&quot;uri&quot;:&quot;8465a0_254803f8495748aba1859b4d9baf52c6~mv2.gif&quot;,&quot;name&quot;:&quot;gameloopSample.gif&quot;,&quot;displayMode&quot;:&quot;stretch&quot;}}"
                                                             data-bg-effect-name="" data-has-ssr-src=""
@@ -11953,7 +11566,7 @@
                                                       </div>
                                                       <div id="comp-ldn61v8a3"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn61v8a3 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:46px; line-height:0.5em;"><span
                                                             style="font-size:27px;" class="wixui-rich-text__text"><span
@@ -11979,7 +11592,7 @@
                                                       </div>
                                                       <div id="comp-ldn61v8b2"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn61v8b2 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:22px; line-height:1em;"><span
                                                             style="font-size:22px;" class="wixui-rich-text__text"><span
@@ -11992,7 +11605,7 @@
                                                       </div>
                                                       <div id="comp-ldn61v8c1"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn61v8c1 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="color:#FFFFFF;" class="wixui-rich-text__text"><span
@@ -12116,7 +11729,7 @@
                                                         class="comp-ldn61v8d aVng1S wixui-horizontal-line"></div>
                                                       <div id="comp-ldn61v8e"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn61v8e wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:24px; line-height:1em;"><span
                                                             style="font-size:24px;" class="wixui-rich-text__text"><span
@@ -12128,7 +11741,7 @@
                                                       </div>
                                                       <div id="comp-ldn61v8e5"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn61v8e5 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="font-weight:bold;"
@@ -12177,7 +11790,7 @@
                                                       </div>
                                                       <div id="comp-ldn61v8f4"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn61v8f4 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="font-weight:bold;"
@@ -12232,12 +11845,12 @@
                                                 data-hook="TabPanel">
                                                 <div id="comp-ldn620to" class="comp-ldn620to">
                                                   <div data-mesh-id="comp-ldn620toinlineContent"
-                                                    data-testid="inline-content" class="">
+                                                     class="">
                                                     <div data-mesh-id="comp-ldn620toinlineContent-gridContainer"
-                                                      data-testid="mesh-container-content">
+                                                      >
                                                       <div id="comp-ldn620up"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn620up wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:46px; line-height:0.5em;"><span
                                                             style="font-size:29px;" class="wixui-rich-text__text"><span
@@ -12263,7 +11876,7 @@
                                                       </div>
                                                       <div id="comp-ldn620un5"
                                                         class="MazNVa comp-ldn620un5 wixui-image">
-                                                        <div data-testid="linkElement" class="j7pOnl"><wow-image
+                                                        <div  class="j7pOnl"><wow-image
                                                             id="img_comp-ldn620un5" class="HlRz5e BI8PVQ"
                                                             data-image-info="{&quot;containerId&quot;:&quot;comp-ldn620un5&quot;,&quot;displayMode&quot;:&quot;stretch&quot;,&quot;targetWidth&quot;:277,&quot;targetHeight&quot;:180,&quot;isLQIP&quot;:false,&quot;imageData&quot;:{&quot;width&quot;:960,&quot;height&quot;:540,&quot;uri&quot;:&quot;8465a0_276374fe7d954099964613833dd77988~mv2.gif&quot;,&quot;name&quot;:&quot;postTag.gif&quot;,&quot;displayMode&quot;:&quot;stretch&quot;}}"
                                                             data-bg-effect-name="" data-has-ssr-src=""
@@ -12276,7 +11889,7 @@
                                                       </div>
                                                       <div id="comp-ldn620up5"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn620up5 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:23px; line-height:1em;"><span
                                                             style="font-size:23px;" class="wixui-rich-text__text"><span
@@ -12289,7 +11902,7 @@
                                                       </div>
                                                       <div id="comp-ldn620uq4"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn620uq4 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="color:#FFFFFF;" class="wixui-rich-text__text"><span
@@ -12394,7 +12007,7 @@
                                                         class="comp-ldn620ur4 aVng1S wixui-horizontal-line"></div>
                                                       <div id="comp-ldn620us3"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn620us3 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:24px; line-height:1em;"><span
                                                             style="font-size:24px;" class="wixui-rich-text__text"><span
@@ -12406,7 +12019,7 @@
                                                       </div>
                                                       <div id="comp-ldn620ut1"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn620ut1 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="font-weight:bold;"
@@ -12456,7 +12069,7 @@
                                                       </div>
                                                       <div id="comp-ldn620uu1"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn620uu1 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="font-weight:bold;"
@@ -12511,12 +12124,12 @@
                                                 data-hook="TabPanel">
                                                 <div id="comp-ldn62cpc" class="comp-ldn62cpc">
                                                   <div data-mesh-id="comp-ldn62cpcinlineContent"
-                                                    data-testid="inline-content" class="">
+                                                     class="">
                                                     <div data-mesh-id="comp-ldn62cpcinlineContent-gridContainer"
-                                                      data-testid="mesh-container-content">
+                                                      >
                                                       <div id="comp-ldn62cqi1"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn62cqi1 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:46px; line-height:0.5em;"><span
                                                             style="font-size:28px;" class="wixui-rich-text__text"><span
@@ -12541,7 +12154,7 @@
                                                         </h2>
                                                       </div>
                                                       <div id="comp-ldn62cqh" class="MazNVa comp-ldn62cqh wixui-image">
-                                                        <div data-testid="linkElement" class="j7pOnl"><wow-image
+                                                        <div  class="j7pOnl"><wow-image
                                                             id="img_comp-ldn62cqh" class="HlRz5e BI8PVQ"
                                                             data-image-info="{&quot;containerId&quot;:&quot;comp-ldn62cqh&quot;,&quot;displayMode&quot;:&quot;stretch&quot;,&quot;targetWidth&quot;:277,&quot;targetHeight&quot;:176,&quot;isLQIP&quot;:false,&quot;imageData&quot;:{&quot;width&quot;:380,&quot;height&quot;:214,&quot;uri&quot;:&quot;8465a0_ef0048dd13f64a40a0e220b2f2392f3f~mv2.gif&quot;,&quot;name&quot;:&quot;warpmanSam.gif&quot;,&quot;displayMode&quot;:&quot;stretch&quot;}}"
                                                             data-bg-effect-name="" data-has-ssr-src=""
@@ -12554,7 +12167,7 @@
                                                       </div>
                                                       <div id="comp-ldn62cqj1"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn62cqj1 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:23px; line-height:1em;"><span
                                                             style="font-size:23px;" class="wixui-rich-text__text"><span
@@ -12566,7 +12179,7 @@
                                                       </div>
                                                       <div id="comp-ldn62cqk"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn62cqk wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="color:#FFFFFF;" class="wixui-rich-text__text"><span
@@ -12664,7 +12277,7 @@
                                                         class="comp-ldn62cqk5 aVng1S wixui-horizontal-line"></div>
                                                       <div id="comp-ldn62cql4"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn62cql4 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:24px; line-height:1em;"><span
                                                             style="font-size:24px;" class="wixui-rich-text__text"><span
@@ -12676,7 +12289,7 @@
                                                       </div>
                                                       <div id="comp-ldn62cqm4"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn62cqm4 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="font-weight:bold;"
@@ -12741,7 +12354,7 @@
                                                       </div>
                                                       <div id="comp-ldn62cqn3"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn62cqn3 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="font-weight:bold;"
@@ -12795,12 +12408,12 @@
                                                 data-hook="TabPanel">
                                                 <div id="comp-ldn62j2x" class="comp-ldn62j2x">
                                                   <div data-mesh-id="comp-ldn62j2xinlineContent"
-                                                    data-testid="inline-content" class="">
+                                                     class="">
                                                     <div data-mesh-id="comp-ldn62j2xinlineContent-gridContainer"
-                                                      data-testid="mesh-container-content">
+                                                      >
                                                       <div id="comp-ldn62j413"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn62j413 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:46px; line-height:0.5em;"><span
                                                             style="font-size:22px;" class="wixui-rich-text__text"><span
@@ -12828,7 +12441,7 @@
                                                       </div>
                                                       <div id="comp-ldn62j401"
                                                         class="MazNVa comp-ldn62j401 wixui-image">
-                                                        <div data-testid="linkElement" class="j7pOnl"><wow-image
+                                                        <div  class="j7pOnl"><wow-image
                                                             id="img_comp-ldn62j401" class="HlRz5e BI8PVQ"
                                                             data-image-info="{&quot;containerId&quot;:&quot;comp-ldn62j401&quot;,&quot;displayMode&quot;:&quot;stretch&quot;,&quot;targetWidth&quot;:277,&quot;targetHeight&quot;:171,&quot;isLQIP&quot;:false,&quot;imageData&quot;:{&quot;width&quot;:380,&quot;height&quot;:214,&quot;uri&quot;:&quot;8465a0_4301ded42001421b82d9a930cdbe96e9~mv2.gif&quot;,&quot;name&quot;:&quot;fpsShooter.gif&quot;,&quot;displayMode&quot;:&quot;stretch&quot;}}"
                                                             data-bg-effect-name="" data-has-ssr-src=""
@@ -12840,8 +12453,7 @@
                                                         </div>
                                                       </div>
                                                       <div id="comp-ldn62j421"
-                                                        class="HcOXKn c9GqVL QxJLC3 comp-ldn62j421 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        class="HcOXKn c9GqVL QxJLC3 comp-ldn62j421 wixui-rich-text">
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:20px; line-height:1em;"><span
                                                             style="font-size:20px;" class="wixui-rich-text__text"><span
@@ -12853,7 +12465,7 @@
                                                       </div>
                                                       <div id="comp-ldn62j43"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn62j43 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="color:#FFFFFF;" class="wixui-rich-text__text"><span
@@ -12946,7 +12558,7 @@
                                                         class="comp-ldn62j435 aVng1S wixui-horizontal-line"></div>
                                                       <div id="comp-ldn62j45"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn62j45 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:24px; line-height:1em;"><span
                                                             style="font-size:24px;" class="wixui-rich-text__text"><span
@@ -12958,7 +12570,7 @@
                                                       </div>
                                                       <div id="comp-ldn62j455"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn62j455 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="font-weight:bold;"
@@ -13014,7 +12626,7 @@
                                                       </div>
                                                       <div id="comp-ldn62j464"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn62j464 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="font-weight:bold;"
@@ -13074,12 +12686,12 @@
                                                 data-hook="TabPanel">
                                                 <div id="comp-ldn63fng" class="comp-ldn63fng">
                                                   <div data-mesh-id="comp-ldn63fnginlineContent"
-                                                    data-testid="inline-content" class="">
+                                                     class="">
                                                     <div data-mesh-id="comp-ldn63fnginlineContent-gridContainer"
-                                                      data-testid="mesh-container-content">
+                                                      >
                                                       <div id="comp-ldn63fom1"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn63fom1 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:46px; line-height:0.5em;"><span
                                                             style="font-size:29px;" class="wixui-rich-text__text"><span
@@ -13105,7 +12717,7 @@
                                                         </h2>
                                                       </div>
                                                       <div id="comp-ldn63fol" class="MazNVa comp-ldn63fol wixui-image">
-                                                        <div data-testid="linkElement" class="j7pOnl"><wow-image
+                                                        <div  class="j7pOnl"><wow-image
                                                             id="img_comp-ldn63fol" class="HlRz5e BI8PVQ"
                                                             data-image-info="{&quot;containerId&quot;:&quot;comp-ldn63fol&quot;,&quot;displayMode&quot;:&quot;stretch&quot;,&quot;targetWidth&quot;:277,&quot;targetHeight&quot;:171,&quot;isLQIP&quot;:false,&quot;imageData&quot;:{&quot;width&quot;:380,&quot;height&quot;:214,&quot;uri&quot;:&quot;8465a0_29a1ae7681c046b2be6ee87802c39971~mv2.gif&quot;,&quot;name&quot;:&quot;connections.gif&quot;,&quot;displayMode&quot;:&quot;stretch&quot;}}"
                                                             data-bg-effect-name="" data-has-ssr-src=""
@@ -13118,7 +12730,7 @@
                                                       </div>
                                                       <div id="comp-ldn63fon1"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn63fon1 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:23px; line-height:1em;"><span
                                                             style="font-size:23px;" class="wixui-rich-text__text"><span
@@ -13130,7 +12742,7 @@
                                                       </div>
                                                       <div id="comp-ldn63foo"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn63foo wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="color:#FFFFFF;" class="wixui-rich-text__text"><span
@@ -13221,7 +12833,7 @@
                                                         class="comp-ldn63foo5 aVng1S wixui-horizontal-line"></div>
                                                       <div id="comp-ldn63fop4"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn63fop4 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:24px; line-height:1em;"><span
                                                             style="font-size:24px;" class="wixui-rich-text__text"><span
@@ -13233,7 +12845,7 @@
                                                       </div>
                                                       <div id="comp-ldn63foq4"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn63foq4 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="font-weight:bold;"
@@ -13308,7 +12920,7 @@
                                                       </div>
                                                       <div id="comp-ldn63for3"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn63for3 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="font-weight:bold;"
@@ -13380,12 +12992,12 @@
                                                 data-hook="TabPanel">
                                                 <div id="comp-ldn6cma3" class="comp-ldn6cma3">
                                                   <div data-mesh-id="comp-ldn6cma3inlineContent"
-                                                    data-testid="inline-content" class="">
+                                                     class="">
                                                     <div data-mesh-id="comp-ldn6cma3inlineContent-gridContainer"
-                                                      data-testid="mesh-container-content">
+                                                      >
                                                       <div id="comp-ldn6cmbl3"
                                                         class="MazNVa comp-ldn6cmbl3 wixui-image">
-                                                        <div data-testid="linkElement" class="j7pOnl"><wow-image
+                                                        <div  class="j7pOnl"><wow-image
                                                             id="img_comp-ldn6cmbl3" class="HlRz5e BI8PVQ"
                                                             data-image-info="{&quot;containerId&quot;:&quot;comp-ldn6cmbl3&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:277,&quot;targetHeight&quot;:333,&quot;isLQIP&quot;:false,&quot;imageData&quot;:{&quot;width&quot;:6000,&quot;height&quot;:5000,&quot;uri&quot;:&quot;8465a0_870eab9c57b24273965d6aa2d95e762e~mv2.png&quot;,&quot;name&quot;:&quot;portraits.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;crop&quot;:{&quot;x&quot;:1273,&quot;y&quot;:434,&quot;width&quot;:3420,&quot;height&quot;:4111,&quot;svgId&quot;:&quot;909695c1e003409ba70b5561666c7c4d.svg&quot;,&quot;flip&quot;:&quot;xy&quot;}}}"
                                                             data-bg-effect-name="" data-has-ssr-src=""><img
@@ -13398,7 +13010,7 @@
                                                       </div>
                                                       <div id="comp-ldn6cmbo4"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn6cmbo4 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:46px; line-height:0.5em;"><span
                                                             style="font-size:18px;" class="wixui-rich-text__text"><span
@@ -13426,7 +13038,7 @@
                                                       </div>
                                                       <div id="comp-ldn6cmbp4"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn6cmbp4 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:21px; line-height:1em;"><span
                                                             style="font-size:21px;" class="wixui-rich-text__text"><span
@@ -13438,7 +13050,7 @@
                                                       </div>
                                                       <div id="comp-ldn6cmbq4"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn6cmbq4 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="color:#FFFFFF;" class="wixui-rich-text__text"><span
@@ -13517,7 +13129,7 @@
                                                         class="comp-ldn6cmbr4 aVng1S wixui-horizontal-line"></div>
                                                       <div id="comp-ldn6cmbs4"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn6cmbs4 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:24px; line-height:1em;"><span
                                                             style="font-size:24px;" class="wixui-rich-text__text"><span
@@ -13529,7 +13141,7 @@
                                                       </div>
                                                       <div id="comp-ldn6cmbt4"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn6cmbt4 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="font-weight:bold;" class="wixui-rich-text__text">Game
@@ -13558,7 +13170,7 @@
                                                       </div>
                                                       <div id="comp-ldn6cmbu4"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-ldn6cmbu4 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="font-weight:bold;"
@@ -13605,12 +13217,12 @@
                                                 data-hook="TabPanel">
                                                 <div id="comp-lggllpjg" class="comp-lggllpjg">
                                                   <div data-mesh-id="comp-lggllpjginlineContent"
-                                                    data-testid="inline-content" class="">
+                                                     class="">
                                                     <div data-mesh-id="comp-lggllpjginlineContent-gridContainer"
-                                                      data-testid="mesh-container-content">
+                                                      >
                                                       <div id="comp-lggllpkc5"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-lggllpkc5 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="line-height:0.5em; font-size:35px;"><span
                                                             style="font-size:15px;" class="wixui-rich-text__text"><span
@@ -13633,7 +13245,7 @@
                                                         </h2>
                                                       </div>
                                                       <div id="comp-lggllpk7" class="MazNVa comp-lggllpk7 wixui-image">
-                                                        <div data-testid="linkElement" class="j7pOnl"><wow-image
+                                                        <div  class="j7pOnl"><wow-image
                                                             id="img_comp-lggllpk7" class="HlRz5e BI8PVQ"
                                                             data-image-info="{&quot;containerId&quot;:&quot;comp-lggllpk7&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:244,&quot;targetHeight&quot;:159,&quot;isLQIP&quot;:false,&quot;imageData&quot;:{&quot;width&quot;:857,&quot;height&quot;:560,&quot;uri&quot;:&quot;8465a0_3f160c57287f45329851daae0becfb0f~mv2.gif&quot;,&quot;name&quot;:&quot;splitter.gif&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;hasAnimation&quot;:false}}"
                                                             data-bg-effect-name="" data-has-ssr-src=""
@@ -13646,7 +13258,7 @@
                                                       </div>
                                                       <div id="comp-lggllpkg2"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-lggllpkg2 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:23px; line-height:1em;"><span
                                                             style="font-size:23px;" class="wixui-rich-text__text"><span
@@ -13658,7 +13270,7 @@
                                                       </div>
                                                       <div id="comp-lggllpkh4"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-lggllpkh4 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em; text-align:justify;">
                                                           <span style="color:#FFFFFF;"
@@ -13765,7 +13377,7 @@
                                                         class="comp-lggllpki1 aVng1S wixui-horizontal-line"></div>
                                                       <div id="comp-lggllpkj3"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-lggllpkj3 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:24px; line-height:1em;"><span
                                                             style="font-size:24px;" class="wixui-rich-text__text"><span
@@ -13777,7 +13389,7 @@
                                                       </div>
                                                       <div id="comp-lggllpkk4"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-lggllpkk4 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="font-weight:bold;"
@@ -13838,7 +13450,7 @@
                                                       </div>
                                                       <div id="comp-lggllpkl2"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-lggllpkl2 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="font-weight:bold;" class="wixui-rich-text__text">Game
@@ -13920,11 +13532,11 @@
                                                 data-hook="TabPanel">
                                                 <div id="comp-lqxwdkz0" class="comp-lqxwdkz0">
                                                   <div data-mesh-id="comp-lqxwdkz0inlineContent"
-                                                    data-testid="inline-content" class="">
+                                                     class="">
                                                     <div data-mesh-id="comp-lqxwdkz0inlineContent-gridContainer"
-                                                      data-testid="mesh-container-content">
+                                                      >
                                                       <div id="comp-lqxwdkzh" class="MazNVa comp-lqxwdkzh wixui-image">
-                                                        <div data-testid="linkElement" class="j7pOnl"><wow-image
+                                                        <div  class="j7pOnl"><wow-image
                                                             id="img_comp-lqxwdkzh" class="HlRz5e BI8PVQ"
                                                             data-image-info="{&quot;containerId&quot;:&quot;comp-lqxwdkzh&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:284,&quot;targetHeight&quot;:244,&quot;isLQIP&quot;:false,&quot;imageData&quot;:{&quot;width&quot;:1137,&quot;height&quot;:845,&quot;uri&quot;:&quot;8465a0_c6866c40b1d048f6b0983e2def078f81~mv2.png&quot;,&quot;name&quot;:&quot;004.PNG&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;hasAnimation&quot;:false,&quot;crop&quot;:{&quot;x&quot;:94,&quot;y&quot;:0,&quot;width&quot;:984,&quot;height&quot;:845,&quot;svgId&quot;:&quot;909695c1e003409ba70b5561666c7c4d.svg&quot;,&quot;flip&quot;:&quot;xy&quot;}}}"
                                                             data-bg-effect-name="" data-has-ssr-src=""><img
@@ -13937,7 +13549,7 @@
                                                       </div>
                                                       <div id="comp-lqxwdkzl1"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-lqxwdkzl1 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="line-height:0.5em; font-size:35px;"><span
                                                             style="font-size:15px;" class="wixui-rich-text__text"><span
@@ -13960,7 +13572,7 @@
                                                       </div>
                                                       <div id="comp-lqxwdkzs"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-lqxwdkzs wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:23px; line-height:1em;"><span
                                                             style="font-size:23px;" class="wixui-rich-text__text"><span
@@ -13972,7 +13584,7 @@
                                                       </div>
                                                       <div id="comp-lqxwdkzu1"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-lqxwdkzu1 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em; text-align:justify;">
                                                           <span style="color:#FFFFFF;"
@@ -14051,7 +13663,7 @@
                                                         class="comp-lqxwdkzy2 aVng1S wixui-horizontal-line"></div>
                                                       <div id="comp-lqxwdl02"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-lqxwdl02 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <h2 class="font_2 wixui-rich-text__text"
                                                           style="font-size:24px; line-height:1em;"><span
                                                             style="font-size:24px;" class="wixui-rich-text__text"><span
@@ -14063,7 +13675,7 @@
                                                       </div>
                                                       <div id="comp-lqxwdl041"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-lqxwdl041 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="font-weight:bold;"
@@ -14100,7 +13712,7 @@
                                                       </div>
                                                       <div id="comp-lqxwdl062"
                                                         class="HcOXKn c9GqVL QxJLC3 comp-lqxwdl062 wixui-rich-text"
-                                                        data-testid="richTextElement">
+                                                        >
                                                         <p class="font_8 wixui-rich-text__text"
                                                           style="font-size:15px; line-height:1.3em;"><span
                                                             style="font-weight:bold;" class="wixui-rich-text__text">Game
@@ -14174,7 +13786,7 @@
                                           </div>
                                         </div>
                                         <div id="comp-ldtho644" class="LjV9wd comp-ldtho644 wixui-image">
-                                          <div data-testid="linkElement" class="Ikn7zx"><wow-image
+                                          <div  class="Ikn7zx"><wow-image
                                               id="img_comp-ldtho644" class="HlRz5e BJSaf1"
                                               data-image-info="{&quot;containerId&quot;:&quot;comp-ldtho644&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:251,&quot;targetHeight&quot;:286,&quot;isLQIP&quot;:false,&quot;imageData&quot;:{&quot;width&quot;:253,&quot;height&quot;:288,&quot;uri&quot;:&quot;8465a0_4ed3e89e5bc64ccf89fc922d22ab5645~mv2.gif&quot;,&quot;name&quot;:&quot;MOSHED-2023-2-7-1-30-43.gif&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}"
                                               data-bg-effect-name="" data-has-ssr-src=""
@@ -14185,7 +13797,7 @@
                                                 height="286" fetchpriority="high"></wow-image></div>
                                         </div>
                                         <div id="comp-ldtjtehu" class="LjV9wd comp-ldtjtehu wixui-image">
-                                          <div data-testid="linkElement" class="Ikn7zx"><wow-image
+                                          <div  class="Ikn7zx"><wow-image
                                               id="img_comp-ldtjtehu" class="HlRz5e BJSaf1"
                                               data-image-info="{&quot;containerId&quot;:&quot;comp-ldtjtehu&quot;,&quot;displayMode&quot;:&quot;stretch&quot;,&quot;targetWidth&quot;:251,&quot;targetHeight&quot;:219,&quot;isLQIP&quot;:false,&quot;imageData&quot;:{&quot;width&quot;:252,&quot;height&quot;:221,&quot;uri&quot;:&quot;8465a0_705adb984cdf44918d8912f7e61834c9~mv2.png&quot;,&quot;name&quot;:&quot;randopanel.png&quot;,&quot;displayMode&quot;:&quot;stretch&quot;}}"
                                               data-bg-effect-name="" data-has-ssr-src=""><img
@@ -14196,13 +13808,13 @@
                                                 fetchpriority="high"></wow-image></div>
                                         </div>
                                         <div id="comp-ldn3p8rh" class="KaEeLN comp-ldn3p8rh">
-                                          <div class="uYj0Sg wixui-box" data-testid="container-bg"></div>
-                                          <div data-mesh-id="comp-ldn3p8rhinlineContent" data-testid="inline-content"
+                                          <div class="uYj0Sg wixui-box" ></div>
+                                          <div data-mesh-id="comp-ldn3p8rhinlineContent" 
                                             class="">
                                             <div data-mesh-id="comp-ldn3p8rhinlineContent-gridContainer"
-                                              data-testid="mesh-container-content">
+                                              >
                                               <div id="comp-ldtc7cbw" class="MazNVa comp-ldtc7cbw wixui-image">
-                                                <div data-testid="linkElement" class="j7pOnl"><wow-image
+                                                <div  class="j7pOnl"><wow-image
                                                     id="img_comp-ldtc7cbw" class="HlRz5e BI8PVQ"
                                                     data-image-info="{&quot;containerId&quot;:&quot;comp-ldtc7cbw&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:253,&quot;targetHeight&quot;:123,&quot;isLQIP&quot;:false,&quot;imageData&quot;:{&quot;width&quot;:253,&quot;height&quot;:123,&quot;uri&quot;:&quot;8465a0_48dd831716bf4801b448789ef96bdf49~mv2.png&quot;,&quot;name&quot;:&quot;musicplayer.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}"
                                                     data-bg-effect-name="" data-has-ssr-src=""><img
@@ -14233,7 +13845,7 @@
                                 </div>
                               </section>
                               <div id="comp-ldtglar7" class="MazNVa comp-ldtglar7 wixui-image">
-                                <div data-testid="linkElement" class="j7pOnl"><wow-image id="img_comp-ldtglar7"
+                                <div  class="j7pOnl"><wow-image id="img_comp-ldtglar7"
                                     class="HlRz5e BI8PVQ"
                                     data-image-info="{&quot;containerId&quot;:&quot;comp-ldtglar7&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:160,&quot;targetHeight&quot;:421,&quot;isLQIP&quot;:false,&quot;imageData&quot;:{&quot;width&quot;:160,&quot;height&quot;:421,&quot;uri&quot;:&quot;8465a0_503c33e075a5405d9dfdfc668c94c491~mv2.png&quot;,&quot;name&quot;:&quot;spread.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}"
                                     data-bg-effect-name="" data-has-ssr-src=""><img
@@ -14258,10 +13870,10 @@
             <div class="cKxVkc">
               <div class="vlM3HR"></div>
               <div class="VrZrC0">
-                <div data-mesh-id="SITE_FOOTERinlineContent" data-testid="inline-content" class="">
-                  <div data-mesh-id="SITE_FOOTERinlineContent-gridContainer" data-testid="mesh-container-content">
+                <div data-mesh-id="SITE_FOOTERinlineContent"  class="">
+                  <div data-mesh-id="SITE_FOOTERinlineContent-gridContainer" >
                     <div id="comp-lnpr5ei8" class="HcOXKn c9GqVL QxJLC3 comp-lnpr5ei8 wixui-rich-text"
-                      data-testid="richTextElement">
+                      >
                       <p class="font_8 wixui-rich-text__text" style="text-align:center; font-size:15px;">Copyright ©
                         2024 Alexandria van Eekelen. All Rights Reserved</p>
                     </div>
