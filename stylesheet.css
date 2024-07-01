@@ -12,7 +12,8 @@ html {
 body {
   --scrollbar-width: 0px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 10px
+  font-size: 10px;
+  position: relative;
 }
 
 
@@ -31,7 +32,6 @@ body:not([data-js-loaded]) [data-hide-prejs] {
 }
 
 #SITE_CONTAINER {
-  position: relative
 }
 
 :root {
