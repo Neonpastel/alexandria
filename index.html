@@ -12,710 +12,11 @@
 
 
 
+
+
+  
+  </style>
   <style>
-    /* Used for project overview */
-    [data-mesh-id$=centeredContent],
-    [data-mesh-id$=form],
-    [data-mesh-id$=inlineContent] {
-      pointer-events: none;
-      position: relative
-    }
-
-    [data-mesh-id$=-gridWrapper],
-    [data-mesh-id$=-rotated-wrapper] {
-      pointer-events: none
-    }
-
-    [data-mesh-id$=-gridContainer]>*,
-    [data-mesh-id$=-rotated-wrapper]>*,
-    [data-mesh-id$=inlineContent]>:not([data-mesh-id$=-gridContainer]) {
-      pointer-events: auto
-    }
-  </style>
-
-
-  <style
-    data-href="https://static.parastorage.com/services/editor-elements-library/dist/thunderbolt/rb_wixui.thunderbolt_bootstrap.11a0aca9.min.css">
-    .J6KGih {
-      cursor: pointer
-    }
-
-    .sNF2R0 {
-      opacity: 0
-    }
-
-    .hLoBV3 {
-      transition: opacity var(--transition-duration) cubic-bezier(.37, 0, .63, 1)
-    }
-
-    .Rdf41z,
-    .hLoBV3 {
-      opacity: 1
-    }
-
-    .ftlZWo {
-      transition: opacity var(--transition-duration) cubic-bezier(.37, 0, .63, 1)
-    }
-
-    .ATGlOr,
-    .ftlZWo {
-      opacity: 0
-    }
-
-    .KQSXD0 {
-      transition: opacity var(--transition-duration) cubic-bezier(.64, 0, .78, 0)
-    }
-
-    .KQSXD0,
-    .pagQKE {
-      opacity: 1
-    }
-
-    ._6zG5H {
-      opacity: 0;
-      transition: opacity var(--transition-duration) cubic-bezier(.22, 1, .36, 1)
-    }
-
-    .BB49uC {
-      transform: translateX(100%)
-    }
-
-    .j9xE1V {
-      transition: transform var(--transition-duration) cubic-bezier(.87, 0, .13, 1)
-    }
-
-    .ICs7Rs,
-    .j9xE1V {
-      transform: translateX(0)
-    }
-
-    .DxijZJ {
-      transition: transform var(--transition-duration) cubic-bezier(.87, 0, .13, 1)
-    }
-
-    .B5kjYq,
-    .DxijZJ {
-      transform: translateX(-100%)
-    }
-
-    .cJijIV {
-      transition: transform var(--transition-duration) cubic-bezier(.87, 0, .13, 1)
-    }
-
-    .cJijIV,
-    .hOxaWM {
-      transform: translateX(0)
-    }
-
-    .T9p3fN {
-      transform: translateX(100%);
-      transition: transform var(--transition-duration) cubic-bezier(.87, 0, .13, 1)
-    }
-
-    .qDxYJm {
-      transform: translateY(100%)
-    }
-
-    .aA9V0P {
-      transition: transform var(--transition-duration) cubic-bezier(.87, 0, .13, 1)
-    }
-
-    .YPXPAS,
-    .aA9V0P {
-      transform: translateY(0)
-    }
-
-    .Xf2zsA {
-      transition: transform var(--transition-duration) cubic-bezier(.87, 0, .13, 1)
-    }
-
-    .Xf2zsA,
-    .y7Kt7s {
-      transform: translateY(-100%)
-    }
-
-    .EeUgMu {
-      transition: transform var(--transition-duration) cubic-bezier(.87, 0, .13, 1)
-    }
-
-    .EeUgMu,
-    .fdHrtm {
-      transform: translateY(0)
-    }
-
-    .WIFaG4 {
-      transform: translateY(100%);
-      transition: transform var(--transition-duration) cubic-bezier(.87, 0, .13, 1)
-    }
-
-    body:not(.responsive) .JsJXaX {
-      overflow-x: clip
-    }
-
-    [data-view-transition=page-transition] .JsJXaX {
-      view-transition-name: page-group
-    }
-
-    .AnQkDU {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
-      height: 100%
-    }
-
-    .AnQkDU>div {
-      align-self: stretch !important;
-      grid-area: 1/1/2/2;
-      justify-self: stretch !important
-    }
-
-    .StylableButton2545352419__root {
-      -archetype: box;
-      border: none;
-      box-sizing: border-box;
-      cursor: pointer;
-      display: block;
-      height: 100%;
-      min-height: 10px;
-      min-width: 10px;
-      padding: 0;
-      touch-action: manipulation;
-      width: 100%
-    }
-
-    .StylableButton2545352419__root[disabled] {
-      pointer-events: none
-    }
-
-    .StylableButton2545352419__root.StylableButton2545352419--hasBackgroundColor {
-      background-color: var(--corvid-background-color) !important
-    }
-
-    .StylableButton2545352419__root.StylableButton2545352419--hasBorderColor {
-      border-color: var(--corvid-border-color) !important
-    }
-
-    .StylableButton2545352419__root.StylableButton2545352419--hasBorderRadius {
-      border-radius: var(--corvid-border-radius) !important
-    }
-
-    .StylableButton2545352419__root.StylableButton2545352419--hasBorderWidth {
-      border-width: var(--corvid-border-width) !important
-    }
-
-    .StylableButton2545352419__root.StylableButton2545352419--hasColor,
-    .StylableButton2545352419__root.StylableButton2545352419--hasColor .StylableButton2545352419__label {
-      color: var(--corvid-color) !important
-    }
-
-    .StylableButton2545352419__link {
-      -archetype: box;
-      box-sizing: border-box;
-      color: #000;
-      text-decoration: none
-    }
-
-    .StylableButton2545352419__container {
-      align-items: center;
-      display: flex;
-      flex-basis: auto;
-      flex-direction: row;
-      flex-grow: 1;
-      height: 100%;
-      justify-content: center;
-      overflow: hidden;
-      transition: all .2s ease, visibility 0s;
-      width: 100%
-    }
-
-    .StylableButton2545352419__label {
-      -archetype: text;
-      -controller-part-type: LayoutChildDisplayDropdown, LayoutFlexChildSpacing(first);
-      max-width: 100%;
-      min-width: 1.8em;
-      overflow: hidden;
-      text-align: center;
-      text-overflow: ellipsis;
-      transition: inherit;
-      white-space: nowrap
-    }
-
-    .StylableButton2545352419__root.StylableButton2545352419--isMaxContent .StylableButton2545352419__label {
-      text-overflow: unset
-    }
-
-    .StylableButton2545352419__root.StylableButton2545352419--isWrapText .StylableButton2545352419__label {
-      min-width: 10px;
-      overflow-wrap: break-word;
-      white-space: break-spaces;
-      word-break: break-word
-    }
-
-    .StylableButton2545352419__icon {
-      -archetype: icon;
-      -controller-part-type: LayoutChildDisplayDropdown, LayoutFlexChildSpacing(last);
-      flex-shrink: 0;
-      height: 50px;
-      min-width: 1px;
-      transition: inherit
-    }
-
-    .StylableButton2545352419__icon.StylableButton2545352419--override {
-      display: block !important
-    }
-
-    .StylableButton2545352419__icon svg,
-    .StylableButton2545352419__icon>div {
-      display: flex;
-      height: inherit;
-      width: inherit
-    }
-
-    .HcOXKn {
-      -webkit-text-size-adjust: 100%;
-      -moz-text-size-adjust: 100%;
-      text-size-adjust: 100%
-    }
-
-    ol.font_100,
-    ul.font_100 {
-      color: #080808;
-      font-family: "Arial, Helvetica, sans-serif", serif;
-      font-size: 10px;
-      font-style: normal;
-      font-variant: normal;
-      font-weight: 400;
-      letter-spacing: normal;
-      line-height: normal;
-      margin: 0;
-      text-decoration: none
-    }
-
-    ol.font_100 li,
-    ul.font_100 li {
-      margin-bottom: 12px
-    }
-
-    ol.wix-list-text-align,
-    ul.wix-list-text-align {
-      list-style-position: inside
-    }
-
-    ol.wix-list-text-align h1,
-    ol.wix-list-text-align h2,
-    ol.wix-list-text-align h3,
-    ol.wix-list-text-align h4,
-    ol.wix-list-text-align h5,
-    ol.wix-list-text-align h6,
-    ol.wix-list-text-align p,
-    ul.wix-list-text-align h1,
-    ul.wix-list-text-align h2,
-    ul.wix-list-text-align h3,
-    ul.wix-list-text-align h4,
-    ul.wix-list-text-align h5,
-    ul.wix-list-text-align h6,
-    ul.wix-list-text-align p {
-      display: inline
-    }
-
-    .ONIxfn {
-      cursor: pointer
-    }
-
-    .WUKwEB {
-      clip: rect(0 0 0 0);
-      border: 0;
-      height: 1px;
-      margin: -1px;
-      overflow: hidden;
-      padding: 0;
-      position: absolute;
-      width: 1px
-    }
-
-    .QxJLC3 [data-attr-richtext-marker=true] {
-      display: block
-    }
-
-    .QxJLC3 [data-attr-richtext-marker=true] table {
-      border-collapse: collapse;
-      margin: 15px 0;
-      width: 100%
-    }
-
-    .QxJLC3 [data-attr-richtext-marker=true] table td {
-      padding: 12px;
-      position: relative
-    }
-
-    .QxJLC3 [data-attr-richtext-marker=true] table td:after {
-      border-bottom: 1px solid currentColor;
-      border-left: 1px solid currentColor;
-      bottom: 0;
-      content: "";
-      left: 0;
-      opacity: .2;
-      position: absolute;
-      right: 0;
-      top: 0
-    }
-
-    .QxJLC3 [data-attr-richtext-marker=true] table tr td:last-child:after {
-      border-right: 1px solid currentColor
-    }
-
-    .QxJLC3 [data-attr-richtext-marker=true] table tr:first-child td:after {
-      border-top: 1px solid currentColor
-    }
-
-    .uGVkMG {
-      direction: var(--text-direction);
-      min-height: var(--min-height);
-      min-width: var(--min-width)
-    }
-
-    .uGVkMG .edKzOf {
-      word-wrap: break-word;
-      height: 100%;
-      overflow-wrap: break-word;
-      position: relative;
-      width: 100%
-    }
-
-    .uGVkMG .edKzOf ul {
-      list-style: disc inside
-    }
-
-    .uGVkMG .edKzOf li {
-      margin-bottom: 12px
-    }
-
-    .SxM0TO blockquote,
-    .SxM0TO h1,
-    .SxM0TO h2,
-    .SxM0TO h3,
-    .SxM0TO h4,
-    .SxM0TO h5,
-    .SxM0TO h6,
-    .SxM0TO p {
-      letter-spacing: normal;
-      line-height: normal
-    }
-
-    .nJYhU3 {
-      min-height: var(--min-height);
-      min-width: var(--min-width)
-    }
-
-    .nJYhU3 .edKzOf {
-      word-wrap: break-word;
-      height: 100%;
-      overflow-wrap: break-word;
-      position: relative;
-      width: 100%
-    }
-
-    .nJYhU3 .edKzOf ol,
-    .nJYhU3 .edKzOf ul {
-      letter-spacing: normal;
-      line-height: normal;
-      margin-inline-start: .5em;
-      padding-inline-start: 1.3em
-    }
-
-    .nJYhU3 .edKzOf ul {
-      list-style-type: disc
-    }
-
-    .nJYhU3 .edKzOf ol {
-      list-style-type: decimal
-    }
-
-    .nJYhU3 .edKzOf ol ul,
-    .nJYhU3 .edKzOf ul ul {
-      line-height: normal;
-      list-style-type: circle
-    }
-
-    .nJYhU3 .edKzOf ol ol ul,
-    .nJYhU3 .edKzOf ol ul ul,
-    .nJYhU3 .edKzOf ul ol ul,
-    .nJYhU3 .edKzOf ul ul ul {
-      line-height: normal;
-      list-style-type: square
-    }
-
-    .nJYhU3 .edKzOf li {
-      font-style: inherit;
-      font-weight: inherit;
-      letter-spacing: normal;
-      line-height: inherit
-    }
-
-    .nJYhU3 .edKzOf h1,
-    .nJYhU3 .edKzOf h2,
-    .nJYhU3 .edKzOf h3,
-    .nJYhU3 .edKzOf h4,
-    .nJYhU3 .edKzOf h5,
-    .nJYhU3 .edKzOf h6,
-    .nJYhU3 .edKzOf p {
-      letter-spacing: normal;
-      line-height: normal;
-      margin-block: 0;
-      margin: 0
-    }
-
-    .nJYhU3 .edKzOf a {
-      color: inherit
-    }
-
-    .SxM0TO,
-    .c9GqVL {
-      word-wrap: break-word;
-      direction: var(--text-direction);
-      min-height: var(--min-height);
-      min-width: var(--min-width);
-      mix-blend-mode: var(--blendMode, normal);
-      overflow-wrap: break-word;
-      pointer-events: none;
-      text-align: start
-    }
-
-    .SxM0TO>*,
-    .c9GqVL>* {
-      pointer-events: auto
-    }
-
-    .SxM0TO li,
-    .c9GqVL li {
-      font-style: inherit;
-      font-weight: inherit;
-      letter-spacing: normal;
-      line-height: inherit
-    }
-
-    .SxM0TO ol,
-    .SxM0TO ul,
-    .c9GqVL ol,
-    .c9GqVL ul {
-      letter-spacing: normal;
-      line-height: normal;
-      margin-inline-end: 0;
-      margin-inline-start: .5em;
-      padding-inline-end: 0;
-      padding-inline-start: 1.3em
-    }
-
-    .SxM0TO ul,
-    .c9GqVL ul {
-      list-style-type: disc
-    }
-
-    .SxM0TO ol,
-    .c9GqVL ol {
-      list-style-type: decimal
-    }
-
-    .SxM0TO ol ul,
-    .SxM0TO ul ul,
-    .c9GqVL ol ul,
-    .c9GqVL ul ul {
-      list-style-type: circle
-    }
-
-    .SxM0TO ol ol ul,
-    .SxM0TO ol ul ul,
-    .SxM0TO ul ol ul,
-    .SxM0TO ul ul ul,
-    .c9GqVL ol ol ul,
-    .c9GqVL ol ul ul,
-    .c9GqVL ul ol ul,
-    .c9GqVL ul ul ul {
-      list-style-type: square
-    }
-
-    .SxM0TO blockquote,
-    .SxM0TO h1,
-    .SxM0TO h2,
-    .SxM0TO h3,
-    .SxM0TO h4,
-    .SxM0TO h5,
-    .SxM0TO h6,
-    .SxM0TO p,
-    .c9GqVL blockquote,
-    .c9GqVL h1,
-    .c9GqVL h2,
-    .c9GqVL h3,
-    .c9GqVL h4,
-    .c9GqVL h5,
-    .c9GqVL h6,
-    .c9GqVL p {
-      margin-block: 0;
-      margin: 0
-    }
-
-    .SxM0TO a,
-    .c9GqVL a {
-      color: inherit
-    }
-
-    .Vd6aQZ {
-      overflow: hidden;
-      padding: 0;
-      pointer-events: none;
-      white-space: nowrap
-    }
-
-    .mHZSwn {
-      display: none
-    }
-
-
-    .QJjwEo {
-      transform: translateY(-100%);
-      transition: .2s ease-in
-    }
-
-    .kdBXfh {
-      transition: .2s
-    }
-
-    .MP52zt {
-      opacity: 0;
-      transition: .2s ease-in
-    }
-
-    .MP52zt.Bhu9m5 {
-      z-index: -1 !important
-    }
-
-    .LVP8Wf {
-      opacity: 1;
-      transition: .2s
-    }
-
-    .VrZrC0 {
-      height: auto
-    }
-
-    .VrZrC0,
-    .cKxVkc {
-      position: relative;
-      width: 100%
-    }
-
-    .AT7o0U[data-focuscycled=active] {
-      outline: 1px solid transparent
-    }
-
-    .AT7o0U[data-focuscycled=active]:not(:focus-within) {
-      outline: 2px solid transparent;
-      transition: outline .01s ease
-    }
-
-    .AT7o0U {
-      bottom: 0;
-      left: 0;
-      position: absolute;
-      right: 0;
-      top: 0
-    }
-
-    .HlRz5e {
-      display: block;
-      height: 100%;
-      width: 100%
-    }
-
-    .HlRz5e img {
-      max-width: var(--wix-img-max-width, 100%)
-    }
-
-    .HlRz5e[data-animate-blur] img {
-      filter: blur(9px);
-      transition: filter .8s ease-in
-    }
-
-    .HlRz5e[data-animate-blur] img[data-load-done] {
-      filter: none
-    }
-
-    .WzbAF8 .mpGTIt .O6KwRn {
-      display: var(--item-display);
-      height: var(--item-size);
-      margin: var(--item-margin);
-      width: var(--item-size)
-    }
-
-    .WzbAF8 .mpGTIt .O6KwRn:last-child {
-      margin: 0
-    }
-
-    .WzbAF8 .mpGTIt .O6KwRn .oRtuWN {
-      display: block
-    }
-
-    .WzbAF8 .mpGTIt .O6KwRn .oRtuWN .YaS0jR {
-      height: var(--item-size);
-      width: var(--item-size)
-    }
-
-    .WzbAF8 .mpGTIt {
-      height: 100%;
-      position: absolute;
-      white-space: nowrap;
-      width: 100%
-    }
-
-    :host(.device-mobile-optimized) .WzbAF8 .mpGTIt,
-    body.device-mobile-optimized .WzbAF8 .mpGTIt {
-      white-space: normal
-    }
-
-    .svgContainer {
-      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-      fill: var(--fill);
-      fill-opacity: var(--fill-opacity);
-      stroke: var(--stroke);
-      stroke-opacity: var(--stroke-opacity);
-      stroke-width: var(--stroke-width);
-      filter: var(--drop-shadow, none);
-      opacity: var(--opacity);
-      transform: var(--flip)
-    }
-
-    .svgContainer,
-    .svgContainer svg {
-      bottom: 0;
-      left: 0;
-      position: absolute;
-      right: 0;
-      top: 0
-    }
-
-    .svgContainer svg {
-      height: var(--svg-calculated-height, 100%);
-      margin: auto;
-      padding: var(--svg-calculated-padding, 0);
-      width: var(--svg-calculated-width, 100%)
-    }
-
-    .svgContainer svg:not([data-type=ugc]) {
-      overflow: visible
-    }
-
-    .TcoJIb * {
-      vector-effect: non-scaling-stroke
-    }
-
-    @supports(-webkit-hyphens:none) {
-      .svgContainer.elfY4_ {
-        will-change: filter
-      }
-    }
-  </style>
-  <style
-    data-href="https://static.parastorage.com/services/editor-elements-library/dist/thunderbolt/rb_wixui.thunderbolt_bootstrap-classic.f7f39044.min.css">
     .PlZyDq {
       touch-action: manipulation
     }
@@ -1607,7 +908,7 @@
     }
   </style>
   <style
-    data-href="https://static.parastorage.com/services/editor-elements-library/dist/thunderbolt/rb_wixui.thunderbolt[StylableHorizontalMenu_WrapColumn].c65a480a.min.css">
+    >
     .StylableHorizontalMenu3372578893__root {
       -archetype: paddingBox;
       box-sizing: border-box;
@@ -1888,7 +1189,7 @@
     }
   </style>
   <style
-    data-href="https://static.parastorage.com/services/editor-elements-library/dist/thunderbolt/rb_wixui.thunderbolt[FreemiumBannerDesktop].779d1c4b.min.css">
+    >
     @font-face {
       font-display: swap;
       font-family: wixFreemiumFontW01-35Thin;
@@ -2087,7 +1388,7 @@
     }
   </style>
   <style
-    data-href="https://static.parastorage.com/services/editor-elements-library/dist/thunderbolt/rb_wixui.thunderbolt[SkipToContentButton].39deac6a.min.css">
+    >
     .LHrbPP {
       background: #fff;
       border-radius: 24px;
@@ -2116,7 +1417,7 @@
     }
   </style>
   <style
-    data-href="https://static.parastorage.com/services/editor-elements-library/dist/thunderbolt/rb_wixui.thunderbolt[WPhoto_MouseOverPhoto].abd96a5a.min.css">
+    >
     .nTOEE9 {
       height: 100%;
       overflow: hidden;
@@ -2225,7 +1526,7 @@
     }
   </style>
   <style
-    data-href="https://static.parastorage.com/services/editor-elements-library/dist/thunderbolt/rb_wixui.thunderbolt[StylableButton_Default].7611138a.min.css">
+    >
     .StylableButton2545352419__root {
       -archetype: box;
       border: none;
@@ -2329,7 +1630,7 @@
     }
   </style>
   <style
-    data-href="https://static.parastorage.com/services/editor-elements-library/dist/thunderbolt/rb_wixui.thunderbolt[MusicPlayer].c309edbe.min.css">
+    >
     .ArtistName2701513331__title {
       color: inherit;
       display: inline-block;
@@ -2869,7 +2170,7 @@
     }
   </style>
   <style
-    data-href="https://static.parastorage.com/services/editor-elements-library/dist/thunderbolt/rb_wixui.thunderbolt[FiveGridLine_SolidLine].23b2f23d.min.css">
+    >
     .aVng1S {
       border-top: var(--lnw, 2px) solid rgba(var(--brd, var(--color_15, color_15)), var(--alpha-brd, 1));
       box-sizing: border-box;
@@ -2877,7 +2178,7 @@
     }
   </style>
   <style
-    data-href="https://static.parastorage.com/services/editor-elements-library/dist/thunderbolt/rb_wixui.thunderbolt[ClassicSection].78038a64.min.css">
+    >
     .Oqnisf {
       overflow: visible
     }
@@ -3149,7 +2450,7 @@
     }
   </style>
   <style
-    data-href="https://static.parastorage.com/services/editor-elements-library/dist/thunderbolt/rb_wixui.thunderbolt[Container_DefaultAreaSkin].482c8a46.min.css">
+    >
     .J6KGih {
       cursor: pointer
     }
@@ -3173,7 +2474,7 @@
     }
   </style>
   <style
-    data-href="https://static.parastorage.com/services/editor-elements-library/dist/thunderbolt/rb_wixui.thunderbolt[Tabs].8d60607f.min.css">
+    >
     .J6KGih {
       cursor: pointer
     }
@@ -3357,12 +2658,12 @@
     }
   </style>
   <style
-    data-href="https://static.parastorage.com/services/editor-elements-library/dist/thunderbolt/rb_wixui.thunderbolt[SingleTab].34bfed3b.min.css">
+    >
     .x3KXTL {
       border-radius: var(--overflow-wrapper-border-radius)
     }
   </style>
-  <style data-href="https://static.parastorage.com/services/wix-thunderbolt/dist/group_7.bae0ce0c.chunk.min.css">
+  <style >
     .TWFxr5 {
       height: auto !important
     }
@@ -3993,75 +3294,6 @@
         background-color: rgb(var(--color_65));
       }
 
-      #masterPage:not(.landingPage) {
-        --top-offset: var(--header-height);
-        --header-height: 54px;
-      }
-
-      #masterPage.landingPage {
-        --top-offset: 0px;
-      }
-
-      #SITE_HEADER {
-        --bg: var(--color_41);
-        --shd: 0 0 5px rgba(0, 0, 0, 0.7);
-        --brwt: 0px;
-        --brd: 47, 46, 46;
-        --brwb: 0px;
-        --bgctr: var(--color_11);
-        --rd: 0px;
-        --alpha-bg: 1;
-        --alpha-brd: 0;
-        --alpha-bgctr: 0;
-      }
-
-      #SITE_HEADER {
-        left: 0;
-        margin-left: 0;
-        width: 100%;
-        min-width: 0;
-      }
-
-      [data-mesh-id=SITE_HEADERinlineContent] {
-        height: auto;
-        width: 100%;
-      }
-
-      [data-mesh-id=SITE_HEADERinlineContent-gridContainer] {
-        position: static;
-        display: grid;
-        height: auto;
-        width: 100%;
-        min-height: auto;
-        grid-template-rows: 1fr;
-        grid-template-columns: 100%;
-      }
-
-      [data-mesh-id=SITE_HEADERinlineContent-gridContainer]>[id="comp-knlqsrh0"] {
-        position: relative;
-        margin: 16px 0px 20px calc((100% - 980px) * 0.5);
-        left: -363px;
-        grid-area: 1 / 1 / 2 / 2;
-        justify-self: start;
-        align-self: start;
-      }
-
-      [data-mesh-id=SITE_HEADERinlineContent-gridContainer]>[id="comp-knlp3gz9"] {
-        position: relative;
-        margin: 0px 0px 11px calc((100% - 980px) * 0.5);
-        left: 1008px;
-        grid-area: 1 / 1 / 2 / 2;
-        justify-self: start;
-        align-self: start;
-      }
-
-      #SITE_HEADER {
-        --bg-overlay-color: transparent;
-        --bg-gradient: none;
-        --shc-mutated-brightness: 127, 49, 36;
-        position: sticky !important;
-        top: var(--wix-ads-height);
-      }
 
       #comp-knlqsrh0 {
         --blendMode: normal;
@@ -4819,35 +4051,7 @@
         min-width: 0;
       }
 
-      #masterPage {
-        --pinned-layers-in-page: 0;
-      }
 
-      [data-mesh-id=Containerc1zeqinlineContent] {
-        height: auto;
-        width: 100%;
-      }
-
-      [data-mesh-id=Containerc1zeqinlineContent-gridContainer] {
-        position: static;
-        display: grid;
-        height: auto;
-        width: 100%;
-        min-height: 40px;
-        grid-template-rows: 1fr;
-        grid-template-columns: 100%;
-        padding-bottom: 0px;
-        box-sizing: border-box;
-      }
-
-      [data-mesh-id=Containerc1zeqinlineContent-gridContainer]>[id="comp-lggll355"] {
-        position: relative;
-        margin: 0px 0px 0 calc((100% - 980px) * 0.5);
-        left: 0px;
-        grid-area: 1 / 1 / 2 / 2;
-        justify-self: start;
-        align-self: start;
-      }
 
       #c1zeq {
         width: auto;
@@ -8849,8 +8053,7 @@
     </style>
   </pages-css>
 
-  <button id="SKIP_TO_CONTENT_BTN" class="SKIP_TO_CONTENT_BTN LHrbPP has-custom-focus" tabindex="0">Skip to Main
-    Content</button>
+  <button id="SKIP_TO_CONTENT_BTN" class="SKIP_TO_CONTENT_BTN LHrbPP has-custom-focus" tabindex="0">Skip to Main Content</button>
 
   <!-- Does some background stuff -->
   <div id="BACKGROUND_GROUP" class="BACKGROUND_GROUP">
@@ -8867,7 +8070,9 @@
   <div id="site-root">
     <div id="masterPage" class="mesh-layout remove-wrappers masterPage css-editing-scope">
       <!-- Red header -->
-      <header id="SITE_HEADER" class="xU8fqS SITE_HEADER wixui-header" tabindex="-1">
+      
+      
+      <header class="xU8fqS SITE_HEADER wixui-header" tabindex="-1">
         <div class="_C0cVf">
           <div class="_4XcTfy"></div>
         </div>
