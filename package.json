@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "dev": "npx eleventy --serve",
+    "build": "npx eleventy",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "eleventy-auto-cache-buster": "^0.3.0"
+  }
+}
