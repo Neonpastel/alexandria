@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="assets/stylesheet.css">
 </head>
 <body>
-    <nav>
+    <nav id="top-nav">
         <h1>Alex(andria) van eekelen</h1>
         <a href="https://example.com">
             <button>Portfolio</button>
@@ -28,9 +28,9 @@
     </header>
 
     <main>
-        <section>
+        <section id="about-and-contact">
             <h3 class="sr-only">About & contact me</h3>
-            <section>
+            <section id="about">
                 <h4 class="sr-only">About</h4>
                 <p>
                     My name is Alex(andria),<br>
@@ -62,17 +62,30 @@
                     I hope my work catches your fancy,
                     and feel free to shoot me a message about whatever!
                 </p>
-                <nav>
+                <nav id="links">
                     <ul>
                         <%
                         const keys = Object.keys(links);
                         for (i=0; i < keys.length; i++) { 
                             const label = keys[i];
                             const link = links[label];
+                            let isSvg, classname = "";
+                            if (label == "art" || label == "music") {
+                                isSvg = true;
+                                classname += "svg-icon";
+                            } else {
+                                isSvg = false;
+                            }
                         %>
-                            <a href="<%=link[1]%>">
+                            <a href="<%=link[1]%>" class="<%=classname %>">
                                 <li>
-                                    <img src="assets/icons/<%=label%>.webp" alt="<%=label%>">
+                                    <% if (isSvg) {%>
+                                        <%- include(`./assets/icons/${label}.svg`) %>
+                                    <%} else { 
+                                    const image = `assets/icons/${label}.webp`;
+                                    %>
+                                        <img src="<%=image%>" alt="<%=label%>">
+                                    <%}%>
                                 </li>
                             </a>
                         <% }; %>
@@ -82,7 +95,7 @@
 
 
 
-            <img src="assets/vertical-text-block.png" alt="">
+            <img id="vertical-text-block" src="assets/vertical-text-block.png" alt="">
 
         </section>
 
