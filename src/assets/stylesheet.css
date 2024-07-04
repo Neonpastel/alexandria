@@ -52,7 +52,7 @@ button {
     margin-bottom: 15px;
 }
 
-header, #about, #vertical-text-block {
+header, #about, #contact, #vertical-text-block {
     border: 0.8px solid var(--bright);
 }
 
@@ -113,10 +113,14 @@ header img {
 
 #about-and-contact {
     display: grid;
-    /* NOTE: keep second column width in line with  */
-    grid-template-columns: 1fr fit-content;
-    grid-template-rows: fit-content 0.1fr 1.2fr;
+    grid-template-columns: 544px fit-content(60px);
+    grid-template-rows: fit-content(40%) 0.1fr 1.4fr;
 }
+
+#about-and-contact > section {
+    max-width: 544px;
+}
+
 
 #about {
     grid-column-start: 1;
@@ -125,7 +129,7 @@ header img {
 
 #vertical-text-block {
     grid-column-start: 2;
-    grid-row: span 2;
+    grid-row: span 3;
 }
 
 #links ul {
@@ -152,4 +156,17 @@ header img {
 
 #links .svg-icon li svg {
     width: 70%;
+}
+
+#contact {
+    grid-column: 1;
+    grid-row: 3;
+    background-image: url("contactme.png");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: contain;
+}
+
+#marquee {
+    background-color: var(--bright);
 }
