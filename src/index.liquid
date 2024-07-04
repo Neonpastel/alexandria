@@ -64,13 +64,13 @@
                 </p>
                 <nav>
                     <ul>
-                        
-                            <a href="https://">
+                        {% for link in links %}
+                            <a href="{{link[1]}}">
                                 <li>
-                                    itch
+                                    {{link[0]}}
                                 </li>
                             </a>
-                        
+                        {% endfor %}
                     </ul>
                 </nav>
             </section>
