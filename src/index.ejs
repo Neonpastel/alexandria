@@ -94,40 +94,42 @@
             </section>
 
             <section id="contact">
-                <%
-                    const contactKeys = Object.keys(contact);
-                    for (i=0; i < contactKeys.length; i++) { 
-                        const label = contactKeys[i];
-                        const link = contact[label];
-                        let isSvg, classname = "";
-                        if (label == "art" || label == "music") {
-                            isSvg = true;
-                            classname += "svg-icon";
-                        } else {
-                            isSvg = false;
-                        }
-                    %>
-                        <li>
-                            <% if (isSvg) {%>
-                                <%- include(`./assets/icons/${label}.svg`) %>
-                            <%} else {
-                                const image = `assets/icons/${label}.webp`;
-                            %>
-                                <img src="<%=image%>" alt="<%=label%>">
-                            <%}%>
-
-                            <% if (label == "mail") { %>
-                                <a href="mailto:<%=link%>" class="<%=classname %>">
-                                    <%=link%>
-                                </a>
-                            <%} else {%>
-                                <span><%=link%></span>
-                            <%}%>
-                        </li>
-                    <%
-                    };
-                    %>
                 <img id="marquee" src="assets/marquee-text-corrected.gif" alt="">
+                <ul>
+                    <%
+                        const contactKeys = Object.keys(contact);
+                        for (i=0; i < contactKeys.length; i++) { 
+                            const label = contactKeys[i];
+                            const link = contact[label];
+                            let isSvg, classname = "";
+                            if (label == "mail") {
+                                isSvg = true;
+                                classname += "svg-icon";
+                            } else {
+                                isSvg = false;
+                            }
+                        %>
+                            <li>
+                                <% if (isSvg) {%>
+                                    <%- include(`./assets/icons/${label}.svg`) %>
+                                <%} else {
+                                    const image = `assets/icons/${label}.webp`;
+                                %>
+                                    <img src="<%=image%>" alt="<%=label%>">
+                                <%}%>
+
+                                <% if (label == "mail") { %>
+                                    <a href="mailto:<%=link%>" class="<%=classname %>">
+                                        <%=link%>
+                                    </a>
+                                <%} else {%>
+                                    <span><%=link%></span>
+                                <%}%>
+                            </li>
+                        <%
+                        };
+                        %>
+                </ul>
             </section>
 
 

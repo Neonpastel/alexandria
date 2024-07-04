@@ -172,6 +172,23 @@ header img {
     background-size: contain;
 }
 
+#contact ul {
+    list-style: none;
+    padding: 0;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+#contact li {
+    margin-bottom: 10px;
+}
+
+#contact img:not(#marquee), #contact svg {
+    width: 32px;
+    vertical-align: middle;
+    height: auto;
+}
+
 #marquee {
     background-color: var(--bright);
 }
