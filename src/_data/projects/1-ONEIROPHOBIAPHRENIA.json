@@ -1,0 +1,32 @@
+{
+    "title": "ONEIRO(PHOBIA/PHRENIA)",
+    "type": "Finished?",
+    "subtitle": "A CRT TV Dreamscape Sim",
+    "description": "Software you can wander through, inspired by the dreams and nightmares of me and my loved ones.",
+    "info": {
+        "Genre": "First-Person, Atmospheric, Simulator",
+        "Engine": "Unity",
+        "Duration": "~3 months",
+        "Itch.io link": ["ONEIRO(PHOBIA/PHRENIA)", "https://shoebby.itch.io/oneirophobiaphrenia"]
+    },
+    "contributions": {
+        "Game Development": [
+            "Developing a channel switching system based on numerical key inputs.",
+            "First time working with interfaces, to develop a solid system for implementing interactables.",
+            "Developing an elaborate rigidbody player controller."
+        ],
+        "Game Design": [
+            "Designing 14 traversable channels."
+        ],
+        "UI Design": [
+            "Designing and implementing various UI elements."
+        ],
+        "Audio Design": [
+            "Production of 9 musical tracks."
+        ],
+        "Video Editing": [
+            "Research into and production of emulated VHS footage."
+        ]
+    }
+
+}

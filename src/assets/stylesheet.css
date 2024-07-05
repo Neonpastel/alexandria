@@ -218,12 +218,14 @@ header img {
     flex: 1;
 }
 
-.project-checkbox + article {
+.project-radio {
+    display: none;
+}
+.project-radio + article {
     display: none;
 }
 
-
-.project-checkbox:checked + article {
+.project-radio:checked + article {
     display: initial;
 }
 
