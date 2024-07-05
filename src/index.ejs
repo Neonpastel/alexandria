@@ -156,7 +156,7 @@
             <%
             var vals = Object.values(projects);
             for (let i=0; i < vals.length; i++) {%>
-                <%-include("/project", {"project": vals[i], "slug": basicslug(vals[i].title)});%>
+                <%-include("/project", {"project": vals[i], "slug": basicslug(vals[i].title), checked: (i == 0)});%>
             <%}%>
         </section>
 

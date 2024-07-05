@@ -1,7 +1,13 @@
 <%
 %>
 
-<input type="radio" id="<%=slug%>" name="project-radio" aria-label="Show <%=project.title%>" class="project-radio">
+<input 
+    type="radio"
+    id="<%=slug%>" 
+    name="project-radio"
+    aria-label="Show <%=project.title%>"
+    <%if (checked){%>checked="true"<%}%>
+    class="project-radio">
 <article class="project">
     <img src="assets/projects/<%=project.image%>" alt="">
     <section class="project-overview">
