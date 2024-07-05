@@ -147,7 +147,7 @@
                 <%
                 var vals = Object.values(projects);
                 for (let i=0; i < vals.length; i++) {%>
-                    <label for="<%=basicslug(vals[i].title)%>"><%=vals[i].title%></label>
+                    <label tabindex="0" for="<%=basicslug(vals[i].title)%>"><%=vals[i].title%></label>
                 <%}%>
             </nav>
             <%

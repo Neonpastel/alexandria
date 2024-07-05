@@ -209,9 +209,13 @@ header img {
     margin: -10px;
     text-align: center;
     color: var(--dark);
+
+    /* TODO: this should not need to be done. but currently it is so that's just how it is gonna be for now */
+    margin-bottom: 5px;
 }
 
 #projects-nav label {
+    border: 3px solid var(--dark);
     background-color: var(--bright);
     padding: 5px;
     cursor: pointer;
@@ -226,10 +230,37 @@ header img {
 }
 
 .project-radio:checked + article {
-    display: initial;
+    display: grid;  /* Keep in sync with .project { display } */
+}
+
+.project {
+    display: grid;
+    grid-template-rows: fit-content 0.5fr fit-content;
+    grid-template-columns: 320px 1fr;
+}
+
+.project img {
+    width: 90%;
+    margin: 5px;
+    grid-column: 1;
+    grid-row: 1;
+    object-fit: contain;
+}
+
+.project-overview {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.project hr {
+    width: 95%;
+    grid-column: span 2;
+    grid-row: 2;
 }
 
 .contributions {
+    grid-column: span 2;
+    grid-row: 3;
     padding: 0;
 }
 .contributions h4 {
