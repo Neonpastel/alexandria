@@ -135,16 +135,18 @@
         </section>
 
         <img id="spread" src="assets/spread.png" alt="">
-        <img id="toolbelt" src="assets/toolbelt.png" alt="">
         
 
-        <p>
+        <section id="projects">
+
             <%
             var vals = Object.values(projects);
             for (let i=0; i < vals.length; i++) {%>
                 <%-include("/project", {"project": vals[i]});%>
             <%}%>
-        </p>
+        </section>
+
+        <img id="toolbelt" src="assets/toolbelt.png" alt="">
 
     </main>
 
