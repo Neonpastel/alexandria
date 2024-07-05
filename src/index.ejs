@@ -63,6 +63,7 @@
                     and feel free to shoot me a message about whatever!
                 </p>
                 <nav id="links">
+                    <h4 class="sr-only">Links to my other sites</h4>
                     <ul>
                         <%
                         const keys = Object.keys(links);
@@ -94,6 +95,7 @@
             </section>
 
             <section id="contact">
+                <h4 class="sr-only">Contact info</h4>
                 <img id="marquee" src="assets/marquee-text-corrected.gif" alt="">
                 <ul>
                     <%
@@ -137,7 +139,15 @@
 
         </section>
 
-        <img id="spread" src="assets/spread.png" alt="">
+        
+
+        <div id="spread-and-resume">
+            <img id="spread" src="assets/spread.png" alt="">
+            <section id="resume">
+                <h3>Resume</h3>
+            </section>
+        </div>
+
         
         <%
         function basicslug(str) {

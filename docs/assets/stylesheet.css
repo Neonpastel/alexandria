@@ -59,7 +59,8 @@ body > *:not(#top-nav), main > * {
 
 header, #about, #contact, #vertical-text-block,
 #spread, #toolbelt, hr, #projects,
-#portrait, #a-creature-building-for-a-future, #musicplayer {
+#portrait, #a-creature-building-for-a-future, #musicplayer,
+#resume {
     border: 0.8px solid var(--bright);
 }
 
@@ -197,6 +198,20 @@ header img {
 
 #marquee {
     background-color: var(--bright);
+}
+
+#resume {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+#spread-and-resume {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+}
+#spread a {
+
 }
 
 #toolbelt {
