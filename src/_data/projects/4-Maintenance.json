@@ -1,0 +1,35 @@
+{
+    "title": "Maintenance",
+    "image": "Maintenance.webp",
+    "type": "Shelved",
+    "subtitle": "\"Take your self, you'll be okay.\"",
+    "description": "Maintenance is a psychological survival horror game. Though in the vein of classics such as Silent Hill, Kuon, Rule of Rose, and Eternal Darkness, it strives to carve its own path using contemporary themes as inspiration for its narrative.",
+    "info": {
+        "Genre": "Survival Horror",
+        "Engine": "Unity",
+        "Duration": "Ongoing (Paused)",
+        "": ["Design Bible", "https://docs.google.com/document/d/1aO1iHz4gCgEyR7YCjp40JQ05xqfTwCHL0zzRVnp3oa8/edit?usp=sharing"]
+    },
+    "contributions": {
+        "Game Development": [
+            "Creating a flexible fixed camera system.",
+            "Creating an inventory system."
+        ],
+        "Game Design": [
+            "Maintaining a comprehensive design bible.",
+            "Designing multiple puzzles.",
+            "Designing multiple enemies."
+        ],
+        "Narrative Design": [
+            "Writing NPC dialogue.",
+            "Writing item descriptions",
+            "Designing and implementing narrative-driven systems and mechanics."
+        ],
+        "Visual Design": [
+            "Character design, modelling, texturing, and animation.",
+            "Environmental and prop design.",
+            "UI design"
+        ]
+    }
+
+}

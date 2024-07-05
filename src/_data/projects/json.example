@@ -1,0 +1,33 @@
+{
+    "title": "AAA",
+    "image": "AAA.webp",
+    "type": "AAA",
+    "subtitle": "AAA",
+    "description": "AAA",
+    "info": {
+        "Genre": "AAA",
+        "Engine": "AAA",
+        "Duration": "AAA",
+        "Itch.io link": ["AAA", "AAADOTCOM"]
+    },
+    "contributions": {
+        "Game Development": [
+            "AAA",
+            "AAA",
+            "AAA"
+        ],
+        "Game Design": [
+            "AAA"
+        ],
+        "UI Design": [
+            "AAA"
+        ],
+        "Audio Design": [
+            "AAA"
+        ],
+        "Video Editing": [
+            "AAA"
+        ]
+    }
+
+}

@@ -232,6 +232,8 @@ header img {
 
 #projects-nav {
     display: flex;
+    flex-wrap: wrap;
+    text-wrap: nowrap;
     /* Compensate for padding. TODO: cleaner solution */
     width: calc(100%+20px);
     margin: -10px;
@@ -273,6 +275,11 @@ header img {
     grid-column: 1;
     grid-row: 1;
     object-fit: contain;
+}
+
+.project-info {
+    padding: 0;
+    list-style: none;
 }
 
 .project-overview {

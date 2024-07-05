@@ -1,0 +1,35 @@
+{
+    "title": "Unexplored 2",
+    "image": "Unexplored 2.webp",
+    "type": "Intern Position",
+    "subtitle": "\"Take care, wayfarer.\"",
+    "description": "UE2 is a roguelite RPG, which I was able to contribute to during the last few months of development. I mostly worked on narrative, UX, and UI design.",
+    "info": {
+        "Genre": "Roguelite RPG",
+        "Engine": "Unity",
+        "Duration": "20 weeks",
+        "Store Page": ["Unexplored 2", "https://store.steampowered.com/app/1095040/Unexplored_2_The_Wayfarers_Legacy/"],
+        "": ["Internship Report (Dutch)", "https://f50c6c92-f0be-4e20-bd70-104faff8915a.filesusr.com/ugd/8465a0_bfff2be9c62d4a49a4c9e0af089daeb2.pdf"]
+    },
+    "contributions": {
+        "Content Design": [
+            "Designing new gift items, relics, consumables, and trade items.​",
+            "Designing and implementing new journey encounters."
+        ],
+        "Narrative Design": [
+            "Writing NPC dialogue.",
+            "Writing item descriptions.",
+            "Redesigning the clan relation system.",
+            "Quest design."
+        ],
+        "UI/UX": [
+            "Designing mockups and proposals for controller support.",
+            "Designing a map-marking system."
+        ],
+        "Player Communication": [
+            "Helping players by fixing their saves in case of bugs.",
+            "Compiling player feedback and turning them into concrete feature proposals."
+        ]
+    }
+
+}

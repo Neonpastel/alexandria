@@ -1,0 +1,25 @@
+{
+    "title": "The Puppeteer's Troupe",
+    "image": "The Puppeteers Troupe.webp",
+    "type": "Cancelled",
+    "subtitle": "Graduation Project",
+    "description": "For my graduation project I planned to develop a tabletop RPG which aimed to trigger critical thought about gender roles and gender expression in its participants; and using tech as a tool to break through the medium's pen & paper traditions to achieve this goal as effectively as possible.",
+    "info": {
+        "Genre": "Tabletop RPG",
+        "Engine": "20 weeks",
+        "Duration": "20 weeks",
+        "": ["Artefact Document", "https://f50c6c92-f0be-4e20-bd70-104faff8915a.filesusr.com/ugd/8465a0_b3592bf70cd248f1932f61efc0c24373.pdf"]
+    },
+    "contributions": {
+        "Game Design": [
+            "Designing a character creation system which imposes roles onto the players.",
+            "Designing 3 archetypes (or classes) for playtesting purposes.",
+            "Designing game rules."
+        ],
+        "Narrative Design": [
+            "Establishing a narrative theme in collaboration with a visual artist.",
+            "Developing an NPC playbook for the main antagonist of the experience, The Puppeteer."
+        ]
+    }
+
+}

@@ -22,7 +22,9 @@
             for (const [key, value] of Object.entries(project.info)) {
             %>
                 <li>
-                    <%=key%>:
+                    <%if (key != "") {%>
+                        <%=key%>:
+                    <%}%>
                     <% if (!Array.isArray(value)) { %>
                     <%=value%>
                     <% } else {%>
