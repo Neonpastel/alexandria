@@ -1,0 +1,43 @@
+{
+    "title": "The Anders Cyclopaedia",
+    "type": "Graduation Project",
+    "subtitle": "Lexicology and Exploration",
+    "description": "An experiment of merging digital and pen & paper gameplay. Explore a parallel world and record its denizens to your Cyclopaedia.",
+    "info": {
+        "Genre": "Third-Person, Exploration, Puzzle",
+        "Engine": "Unity",
+        "Duration": "20 weeks",
+        "Itch.io link": ["The Anders Cyclopaedia", "https://shoebby.itch.io/the-anders-cyclopaedia"],
+        "Companion Paper": ["No Stupid Questions", "https://f50c6c92-f0be-4e20-bd70-104faff8915a.filesusr.com/ugd/8465a0_fbf13e89b16d4f0fbc259cecaa85c66d.pdf" ]
+    },
+    "contributions": {
+        "Visual Design": [
+            "Modelling and texturing a 3D player model.",
+            "Modelling and texturing 4 Andersian creatures.",
+            "Modelling and texturing various environmental assets."
+        ],
+        "Level Design": [
+            "Designing 3 explorable areas."
+        ],
+        "Animation": [
+            "Rigging and animating each creature.",
+            "Rigging and making a few custom animations for the player character."
+        ],
+        "Game Design": [
+            "Establishing the core premise of the game.",
+            "Designing 5 main areas, each with their own puzzles and level elements.",
+            "Designing the Cyclopaedia aspect of the game."
+        ],
+        "Narrative Design": [
+            "Writing all of the game's dialogue.",
+            "Implementing narrative \"pipe\" scenes between explorable areas.",
+            "Writing the Cyclopaedia, with the addition of narrative tidbits to be used in puzzles."
+        ],
+        "Audio Design": [
+            "Production and implementation of various sound effects.",
+            "Production of 1 musical track."
+        ]
+
+    }
+
+}

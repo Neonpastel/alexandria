@@ -137,6 +137,15 @@
         <img id="spread" src="assets/spread.png" alt="">
         <img id="toolbelt" src="assets/toolbelt.png" alt="">
         
+
+        <p>
+            <%
+            var vals = Object.values(projects);
+            for (let i=0; i < vals.length; i++) {%>
+                <%-include("/project", {"project": vals[i]});%>
+            <%}%>
+        </p>
+
     </main>
 
 </body>
