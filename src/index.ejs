@@ -136,13 +136,24 @@
 
         <img id="spread" src="assets/spread.png" alt="">
         
+        <%
+        function basicslug(str) {
+            return str.replace(/[^a-zA-Z0-9]/g, "-");
+        }
+        %>
 
         <section id="projects">
-
+            <nav id="projects-nav">
+                <%
+                var vals = Object.values(projects);
+                for (let i=0; i < vals.length; i++) {%>
+                    <label for="<%=basicslug(vals[i].title)%>"><%=vals[i].title%></label>
+                <%}%>
+            </nav>
             <%
             var vals = Object.values(projects);
             for (let i=0; i < vals.length; i++) {%>
-                <%-include("/project", {"project": vals[i]});%>
+                <%-include("/project", {"project": vals[i], "slug": basicslug(vals[i].title)});%>
             <%}%>
         </section>
 

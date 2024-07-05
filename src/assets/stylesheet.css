@@ -202,6 +202,30 @@ header img {
     display: inline-block;
 }
 
+#projects-nav {
+    display: flex;
+    /* Compensate for padding. TODO: cleaner solution */
+    width: calc(100%+20px);
+    margin: -10px;
+    text-align: center;
+    color: var(--dark);
+}
+
+#projects-nav label {
+    background-color: var(--bright);
+    padding: 5px;
+    cursor: pointer;
+    flex: 1;
+}
+
+.project-checkbox + article {
+    display: none;
+}
+
+
+.project-checkbox:checked + article {
+    display: initial;
+}
 
 .contributions {
     padding: 0;
