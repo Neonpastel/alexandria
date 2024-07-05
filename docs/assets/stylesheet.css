@@ -57,7 +57,9 @@ body > *:not(#top-nav), main > * {
     align-items: center;    
 }
 
-header, #about, #contact, #vertical-text-block, #spread, #toolbelt, hr, #projects {
+header, #about, #contact, #vertical-text-block,
+#spread, #toolbelt, hr, #projects,
+#portrait, #a-creature-building-for-a-future, #musicplayer {
     border: 0.8px solid var(--bright);
 }
 
@@ -122,6 +124,8 @@ header img {
     display: inline-grid;
     grid-template-columns: 544px fit-content(60px);
     grid-template-rows: fit-content(40%) 0.1fr 1.4fr;
+
+    position: relative;
 }
 
 #about-and-contact > section {
@@ -193,6 +197,15 @@ header img {
 
 #marquee {
     background-color: var(--bright);
+}
+
+#toolbelt {
+    position: absolute;
+    top: 100%;
+    margin-top: 20px; /* Apply same margin as main gap */
+    left: 0;
+    width: 100%;
+    height: auto;
 }
 
 #projects {
@@ -278,6 +291,16 @@ header img {
 }
 
 
-#toolbelt {
-    max-width: 40%;
+aside {
+    max-width: 300px;
+    display: inline-block;
+    /*display: inline-flex;
+    flex-wrap: wrap;
+    */
+}
+
+aside * {
+    /*object-fit: contain;
+    box-sizing: border-box;
+    */
 }
