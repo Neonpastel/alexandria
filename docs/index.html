@@ -23,7 +23,7 @@ Interactive Narrative designer
 <path d="M170.281 20.146v144.371L25.892 20.16l-6.27 6.268 144.421 144.393H19.588v8.866h159.561V20.146h-8.868z"></path>
 </g>
 </svg>
-<img src="assets/header-interactive-painware-artisan.png" alt="">
+<img src="assets/header-interactive-painware-artisan.png" aria-hidden="true">
 </header>
 <main>
 <section id="about-and-contact">
@@ -122,7 +122,7 @@ and feel free to shoot me a message about whatever!
 </section>
 <section id="contact">
 <h4 class="sr-only">Contact info</h4>
-<img id="marquee" src="assets/marquee-text-corrected.gif" alt="">
+<img id="marquee" src="assets/marquee-text-corrected.gif" aria-hidden="true">
 <ul>
 
 <li>
@@ -151,11 +151,13 @@ alexandria.vaneekelen@gmail.com
 
 </ul>
 </section>
-<img id="vertical-text-block" src="assets/vertical-text-block.png" alt="">
-<img id="toolbelt" src="assets/toolbelt.png" alt="">
+<img id="vertical-text-block" src="assets/vertical-text-block.png" aria-hidden="true">
+<img id="toolbelt" src="assets/toolbelt.png"
+title="Tools in order: Blender, Fruity Loops, Unity, PhotoShop, Premiere, Notion"
+alt="My toolbelt: Blender, Fruity Loops, Unity, PhotoShop, Premiere, Notion. Anything listed is up for replacement. I've dabbled in mixed media as well. These are simply what I've used most often during my studies">
 </section>
 <div id="spread-and-resume">
-<img id="spread" src="assets/spread.png" alt="">
+<img id="spread" src="assets/spread.png" aria-hidden="true">
 <section id="resume">
 <h3>Resume</h3>
 </section>
@@ -164,46 +166,45 @@ alexandria.vaneekelen@gmail.com
 <section id="projects">
 <nav id="projects-nav">
 
-<label tabindex="0" for="The-Anders-Cyclopaedia">The Anders Cyclopaedia</label>
+<label role="button" aria-flowto="The-Anders-Cyclopaedia" aria-label="Show The Anders Cyclopaedia info" tabindex="0" for="The-Anders-Cyclopaedia-radio" id="The-Anders-Cyclopaedia-label">The Anders Cyclopaedia</label>
 
-<label tabindex="0" for="ONEIRO-PHOBIA-PHRENIA-">ONEIRO(PHOBIA/PHRENIA)</label>
+<label role="button" aria-flowto="ONEIRO-PHOBIA-PHRENIA-" aria-label="Show ONEIRO(PHOBIA/PHRENIA) info" tabindex="0" for="ONEIRO-PHOBIA-PHRENIA--radio" id="ONEIRO-PHOBIA-PHRENIA--label">ONEIRO(PHOBIA/PHRENIA)</label>
 
-<label tabindex="0" for="AAA">AAA</label>
+<label role="button" aria-flowto="AAA" aria-label="Show AAA info" tabindex="0" for="AAA-radio" id="AAA-label">AAA</label>
 
-<label tabindex="0" for="AAA">AAA</label>
+<label role="button" aria-flowto="AAA" aria-label="Show AAA info" tabindex="0" for="AAA-radio" id="AAA-label">AAA</label>
 
-<label tabindex="0" for="AAA">AAA</label>
+<label role="button" aria-flowto="AAA" aria-label="Show AAA info" tabindex="0" for="AAA-radio" id="AAA-label">AAA</label>
 
-<label tabindex="0" for="AAA">AAA</label>
+<label role="button" aria-flowto="AAA" aria-label="Show AAA info" tabindex="0" for="AAA-radio" id="AAA-label">AAA</label>
 
-<label tabindex="0" for="Unexplored-2">Unexplored 2</label>
+<label role="button" aria-flowto="Unexplored-2" aria-label="Show Unexplored 2 info" tabindex="0" for="Unexplored-2-radio" id="Unexplored-2-label">Unexplored 2</label>
 
-<label tabindex="0" for="The-Puppeteer-s-Troupe">The Puppeteer&#39;s Troupe</label>
+<label role="button" aria-flowto="The-Puppeteer-s-Troupe" aria-label="Show The Puppeteer&#39;s Troupe info" tabindex="0" for="The-Puppeteer-s-Troupe-radio" id="The-Puppeteer-s-Troupe-label">The Puppeteer&#39;s Troupe</label>
 
-<label tabindex="0" for="Maintenance">Maintenance</label>
+<label role="button" aria-flowto="Maintenance" aria-label="Show Maintenance info" tabindex="0" for="Maintenance-radio" id="Maintenance-label">Maintenance</label>
 
-<label tabindex="0" for="AAA">AAA</label>
+<label role="button" aria-flowto="AAA" aria-label="Show AAA info" tabindex="0" for="AAA-radio" id="AAA-label">AAA</label>
 
-<label tabindex="0" for="AAA">AAA</label>
+<label role="button" aria-flowto="AAA" aria-label="Show AAA info" tabindex="0" for="AAA-radio" id="AAA-label">AAA</label>
 
-<label tabindex="0" for="AAA">AAA</label>
+<label role="button" aria-flowto="AAA" aria-label="Show AAA info" tabindex="0" for="AAA-radio" id="AAA-label">AAA</label>
 
-<label tabindex="0" for="AAA">AAA</label>
+<label role="button" aria-flowto="AAA" aria-label="Show AAA info" tabindex="0" for="AAA-radio" id="AAA-label">AAA</label>
 
-<label tabindex="0" for="AAA">AAA</label>
+<label role="button" aria-flowto="AAA" aria-label="Show AAA info" tabindex="0" for="AAA-radio" id="AAA-label">AAA</label>
 
 </nav>
 
 
 <input
 type="radio"
-id="The-Anders-Cyclopaedia"
+id="The-Anders-Cyclopaedia-radio"
 name="project-radio"
-aria-label="Show The Anders Cyclopaedia"
 checked="true"
 class="project-radio">
-<article class="project">
-<img src="assets/projects/The Anders Cyclopaedia.gif" alt="">
+<article class="project" id="The-Anders-Cyclopaedia">
+<img src="assets/projects/The Anders Cyclopaedia.gif" alt="A gif of...">
 <section class="project-overview">
 <h2>The Anders Cyclopaedia</h2>
 <p>(Graduation Project)</p>
@@ -339,12 +340,11 @@ Companion Paper:
 
 <input
 type="radio"
-id="ONEIRO-PHOBIA-PHRENIA-"
+id="ONEIRO-PHOBIA-PHRENIA--radio"
 name="project-radio"
-aria-label="Show ONEIRO(PHOBIA/PHRENIA)"
 
 class="project-radio">
-<article class="project">
+<article class="project" id="ONEIRO-PHOBIA-PHRENIA-">
 <img src="assets/projects/ONEIROPHOBIAPHRENIA.webp" alt="">
 <section class="project-overview">
 <h2>ONEIRO(PHOBIA/PHRENIA)</h2>
@@ -451,12 +451,11 @@ Itch.io link:
 
 <input
 type="radio"
-id="AAA"
+id="AAA-radio"
 name="project-radio"
-aria-label="Show AAA"
 
 class="project-radio">
-<article class="project">
+<article class="project" id="AAA">
 <img src="assets/projects/AAA.webp" alt="">
 <section class="project-overview">
 <h2>AAA</h2>
@@ -563,12 +562,11 @@ Itch.io link:
 
 <input
 type="radio"
-id="AAA"
+id="AAA-radio"
 name="project-radio"
-aria-label="Show AAA"
 
 class="project-radio">
-<article class="project">
+<article class="project" id="AAA">
 <img src="assets/projects/AAA.webp" alt="">
 <section class="project-overview">
 <h2>AAA</h2>
@@ -675,12 +673,11 @@ Itch.io link:
 
 <input
 type="radio"
-id="AAA"
+id="AAA-radio"
 name="project-radio"
-aria-label="Show AAA"
 
 class="project-radio">
-<article class="project">
+<article class="project" id="AAA">
 <img src="assets/projects/AAA.webp" alt="">
 <section class="project-overview">
 <h2>AAA</h2>
@@ -787,12 +784,11 @@ Itch.io link:
 
 <input
 type="radio"
-id="AAA"
+id="AAA-radio"
 name="project-radio"
-aria-label="Show AAA"
 
 class="project-radio">
-<article class="project">
+<article class="project" id="AAA">
 <img src="assets/projects/AAA.webp" alt="">
 <section class="project-overview">
 <h2>AAA</h2>
@@ -899,12 +895,11 @@ Itch.io link:
 
 <input
 type="radio"
-id="Unexplored-2"
+id="Unexplored-2-radio"
 name="project-radio"
-aria-label="Show Unexplored 2"
 
 class="project-radio">
-<article class="project">
+<article class="project" id="Unexplored-2">
 <img src="assets/projects/Unexplored 2.webp" alt="">
 <section class="project-overview">
 <h2>Unexplored 2</h2>
@@ -1017,12 +1012,11 @@ Store Page:
 
 <input
 type="radio"
-id="The-Puppeteer-s-Troupe"
+id="The-Puppeteer-s-Troupe-radio"
 name="project-radio"
-aria-label="Show The Puppeteer&#39;s Troupe"
 
 class="project-radio">
-<article class="project">
+<article class="project" id="The-Puppeteer-s-Troupe">
 <img src="assets/projects/The Puppeteers Troupe.webp" alt="">
 <section class="project-overview">
 <h2>The Puppeteer&#39;s Troupe</h2>
@@ -1102,12 +1096,11 @@ Duration:
 
 <input
 type="radio"
-id="Maintenance"
+id="Maintenance-radio"
 name="project-radio"
-aria-label="Show Maintenance"
 
 class="project-radio">
-<article class="project">
+<article class="project" id="Maintenance">
 <img src="assets/projects/Maintenance.webp" alt="">
 <section class="project-overview">
 <h2>Maintenance</h2>
@@ -1213,12 +1206,11 @@ Ongoing (Paused)
 
 <input
 type="radio"
-id="AAA"
+id="AAA-radio"
 name="project-radio"
-aria-label="Show AAA"
 
 class="project-radio">
-<article class="project">
+<article class="project" id="AAA">
 <img src="assets/projects/AAA.webp" alt="">
 <section class="project-overview">
 <h2>AAA</h2>
@@ -1325,12 +1317,11 @@ Itch.io link:
 
 <input
 type="radio"
-id="AAA"
+id="AAA-radio"
 name="project-radio"
-aria-label="Show AAA"
 
 class="project-radio">
-<article class="project">
+<article class="project" id="AAA">
 <img src="assets/projects/AAA.webp" alt="">
 <section class="project-overview">
 <h2>AAA</h2>
@@ -1437,12 +1428,11 @@ Itch.io link:
 
 <input
 type="radio"
-id="AAA"
+id="AAA-radio"
 name="project-radio"
-aria-label="Show AAA"
 
 class="project-radio">
-<article class="project">
+<article class="project" id="AAA">
 <img src="assets/projects/AAA.webp" alt="">
 <section class="project-overview">
 <h2>AAA</h2>
@@ -1549,12 +1539,11 @@ Itch.io link:
 
 <input
 type="radio"
-id="AAA"
+id="AAA-radio"
 name="project-radio"
-aria-label="Show AAA"
 
 class="project-radio">
-<article class="project">
+<article class="project" id="AAA">
 <img src="assets/projects/AAA.webp" alt="">
 <section class="project-overview">
 <h2>AAA</h2>
@@ -1661,12 +1650,11 @@ Itch.io link:
 
 <input
 type="radio"
-id="AAA"
+id="AAA-radio"
 name="project-radio"
-aria-label="Show AAA"
 
 class="project-radio">
-<article class="project">
+<article class="project" id="AAA">
 <img src="assets/projects/AAA.webp" alt="">
 <section class="project-overview">
 <h2>AAA</h2>
@@ -1772,9 +1760,9 @@ Itch.io link:
 
 </section>
 <aside>
-<img id="portrait" src="assets/portrait.png" alt="">
-<img id="a-creature-building-for-a-future" src="assets/a-creature-building-for-a-future.png" alt="">
-<img id="musicplayer" src="assets/musicplayer.png" alt="">
+<img id="portrait" src="assets/portrait.png" alt="A glitched out portrait">
+<img id="a-creature-building-for-a-future" src="assets/a-creature-building-for-a-future.png" alt="An image with decorative font reading 'A creatue Building for A future">
+<img id="musicplayer" src="assets/musicplayer.png" aria-hidden="true">
 </aside>
 </main>
 <footer>

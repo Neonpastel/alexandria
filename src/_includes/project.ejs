@@ -3,13 +3,12 @@
 
 <input 
     type="radio"
-    id="<%=slug%>" 
+    id="<%=slug%>-radio" 
     name="project-radio"
-    aria-label="Show <%=project.title%>"
     <%if (checked){%>checked="true"<%}%>
     class="project-radio">
-<article class="project">
-    <img src="assets/projects/<%=project.image%>" alt="">
+<article class="project" id="<%=slug%>">
+    <img src="assets/projects/<%=project.image%>" alt="<%=project.alt%>">
     <section class="project-overview">
         <h2><%=project.title%></h2>
         <p>(<%=project.type%>)</p>

@@ -24,7 +24,7 @@
                 <path d="M170.281 20.146v144.371L25.892 20.16l-6.27 6.268 144.421 144.393H19.588v8.866h159.561V20.146h-8.868z"></path>
             </g>
         </svg>
-        <img src="assets/header-interactive-painware-artisan.png" alt="">
+        <img src="assets/header-interactive-painware-artisan.png" aria-hidden="true">
     </header>
 
     <main>
@@ -96,7 +96,7 @@
 
             <section id="contact">
                 <h4 class="sr-only">Contact info</h4>
-                <img id="marquee" src="assets/marquee-text-corrected.gif" alt="">
+                <img id="marquee" src="assets/marquee-text-corrected.gif" aria-hidden="true">
                 <ul>
                     <%
                         const contactKeys = Object.keys(contact);
@@ -133,16 +133,18 @@
                         %>
                 </ul>
             </section>
-            <img id="vertical-text-block" src="assets/vertical-text-block.png" alt="">
+            <img id="vertical-text-block" src="assets/vertical-text-block.png" aria-hidden="true">
 
-            <img id="toolbelt" src="assets/toolbelt.png" alt="">
+            <img id="toolbelt" src="assets/toolbelt.png" 
+                title="Tools in order: Blender, Fruity Loops, Unity, PhotoShop, Premiere, Notion"
+                alt="My toolbelt: Blender, Fruity Loops, Unity, PhotoShop, Premiere, Notion. Anything listed is up for replacement. I've dabbled in mixed media as well. These are simply what I've used most often during my studies">
 
         </section>
 
         
 
         <div id="spread-and-resume">
-            <img id="spread" src="assets/spread.png" alt="">
+            <img id="spread" src="assets/spread.png" aria-hidden="true">
             <section id="resume">
                 <h3>Resume</h3>
             </section>
@@ -160,7 +162,7 @@
                 <%
                 var vals = Object.values(projects);
                 for (let i=0; i < vals.length; i++) {%>
-                    <label tabindex="0" for="<%=basicslug(vals[i].title)%>"><%=vals[i].title%></label>
+                    <label role="button" aria-flowto="<%=basicslug(vals[i].title)%>" aria-label="Show <%=vals[i].title%> info" tabindex="0" for="<%=basicslug(vals[i].title)%>-radio" id="<%=basicslug(vals[i].title)%>-label"><%=vals[i].title%></label>
                 <%}%>
             </nav>
             <%
@@ -172,9 +174,9 @@
 
 
         <aside>
-            <img id="portrait" src="assets/portrait.png" alt="">
-            <img id="a-creature-building-for-a-future" src="assets/a-creature-building-for-a-future.png" alt="">
-            <img id="musicplayer" src="assets/musicplayer.png" alt="">
+            <img id="portrait" src="assets/portrait.png" alt="A glitched out portrait">
+            <img id="a-creature-building-for-a-future" src="assets/a-creature-building-for-a-future.png" alt="An image with decorative font reading 'A creatue Building for A future">
+            <img id="musicplayer" src="assets/musicplayer.png" aria-hidden="true">
         </aside>
     
     </main>
