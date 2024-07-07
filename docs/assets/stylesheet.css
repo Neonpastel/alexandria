@@ -176,8 +176,23 @@ header img {
 }
 
 #links .svg-icon {
+    transition-property: background-color;
+    transition-timing-function: ease-in-out;
+    transition-duration: 250ms;
     background-color: var(--bright);
     border-radius: 100%;
+}
+#links .svg-icon path {
+    transition: fill 250ms ease-in-out;
+}
+
+#links .svg-icon:hover {
+    background-color: var(--dark);
+    border-radius: 100%;
+}
+
+#links .svg-icon:hover path {
+    fill: white;
 }
 
 #links .svg-icon li {
