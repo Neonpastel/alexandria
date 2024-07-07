@@ -46,7 +46,8 @@ body > *:not(#top-nav), main > * {
 
     /* -20 px for padding, -30 for margin */
     width: calc(100%-50px);
-    height: 55px;
+    min-height: 55px;
+    height: fit-content;
     background-color: var(--bright);
     box-shadow: 0px 2px 1px #471b14;
 
@@ -83,11 +84,6 @@ header {
     gap: 20px;
 
 }
-@media (max-width: 1111px) {
-    header {
-        flex-wrap: wrap;
-    }
-}
 
 header >:not(svg) {
     flex: 1;
@@ -123,8 +119,13 @@ header img {
 #about-and-contact {
     vertical-align: top;
     display: inline-grid;
-    grid-template-columns: 544px fit-content(60px);
+    grid-template-columns: minmax(100px, 544px) fit-content(60px);
     grid-template-rows: fit-content(40%) 0.1fr 1.4fr;
+
+    margin: auto;
+    width: 95%;
+
+    margin-bottom: 80px;
 
     position: relative;
 }
@@ -145,10 +146,12 @@ header img {
 }
 
 #links ul {
+    padding: 0;
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 15px;
+    max-width: 100%;
 }
 #links ul * {
     width: 35px;
@@ -176,7 +179,9 @@ header img {
     background-image: url("contactme.png");
     background-repeat: no-repeat;
     background-position-y: bottom;
-    background-size: contain;
+    background-position-x: right;
+    background-size: cover;
+    overflow: hidden;
 }
 
 #contact ul {
@@ -325,4 +330,42 @@ aside * {
     /*object-fit: contain;
     box-sizing: border-box;
     */
+}
+
+@media (max-width: 1111px) {
+    header {
+        flex-wrap: wrap;
+    }
+    #spread-and-resume {
+        display: block;
+        margin: auto;
+    }
+    #resume {
+        display: block;
+        margin-bottom: 15px;
+    }
+    #projects {
+        display: block;
+        margin: auto;
+        max-width: initial;
+        width: 95%;
+    }
+    aside {
+        width: 95%;
+        max-width: initial;
+        text-align: center;
+    }
+    aside > * {
+        margin-bottom: 15px;
+    }
+    
+    .project 
+    #vertical-text-block {
+        float: right;
+    }
+
+    #links ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
