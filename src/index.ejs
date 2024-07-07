@@ -3,7 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <% 
+    const title = "Game and Narrative Design | Alex(andria) van Eekelen";
+    const description = "Alex(andria) van Eekelen is a game and narrative designer, currently further specializing in their fields of preference. Their skillset extends into a generalist approach to prototyping and game-making."
+    const url = "https://www.neonpastel.net/portfolio";
+    const image = "";
+    const imageWidth = 0;
+    const imageHeight = 0;
+    %>
+
+    <title><%=title%></title>
+    <meta name="description" content="<%=description%>"/>
+    <link rel="canonical" href="<%=url%>"/>
+
+    <meta property="og:title" content="<%=title%>"/>
+    <meta property="og:description" content="<%=description%>"/>
+    <meta property="og:image" content="<%=image%>"/>
+    <meta property="og:image:width" content="<%=imageWidth%>"/>
+    <meta property="og:image:height" content="<%=imageHeight%>"/>
+    <meta property="og:url" content="<%=url%>"/>
+    <meta property="og:site_name" content="Portfolio"/>
+    <meta property="og:type" content="website"/>
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="<%=title%>"/>
+    <meta name="twitter:description" content="<%=image%>"/>
+    <meta name="twitter:image" content="<%=image%>"/>
+
     <link rel="stylesheet" href="assets/stylesheet.css">
 </head>
 <body>
