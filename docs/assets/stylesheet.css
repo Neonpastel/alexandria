@@ -29,7 +29,7 @@ a:hover {
 }
 
 a:active {
-    color: var(--dark);
+    color: gray;
 }
 
 
@@ -216,9 +216,26 @@ header img {
     overflow: hidden;
 }
 
+#contact a:link {
+    color: white;
+}
+
+#contact a:visited {
+    text-underline-position: var(--bright);
+}
+
+#contact a:hover {
+    color: var(--bright);
+}
+
+#contact a:active {
+    color: gray;
+}
+
+
 #contact svg path {
     /* TODO: too general selecter, might cause issues down the line */
-    fill: var(--bright);
+    fill: white;
 }
 
 #contact ul {
