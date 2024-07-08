@@ -295,6 +295,10 @@ header img {
 
 }
 
+main {
+    display: inline;
+}
+
 #toolbelt {
     position: absolute;
     top: 100%;
@@ -433,10 +437,10 @@ footer p {
         display: block;
         margin: auto;
         max-width: initial;
-        width: 95%;
+        width: 80vw;
     }
     aside {
-        width: 95%;
+        width: 80vw;
         max-width: initial;
         text-align: center;
     }
