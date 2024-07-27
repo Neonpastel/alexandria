@@ -7,10 +7,11 @@
     <% 
     const title = "Game and Narrative Design | Alex(andria) van Eekelen";
     const description = "Alex(andria) van Eekelen is a game and narrative designer, currently further specializing in their fields of preference. Their skillset extends into a generalist approach to prototyping and game-making."
-    const url = "https://www.neonpastel.net/portfolio";
-    const image = "";
-    const imageWidth = 0;
-    const imageHeight = 0;
+    const url = "https://www.neonpastel.net/alexandria";
+    const image = `${url}/assets/images/website-embed.png`;
+    const imageAlt = "Header Alexandria van Eekelen, subheader interactive pain ware artisan. This embed depicts a picture of a woman holding a cup with a text box next to her head, which contains the following: Ah... Traveller... You happen upon mine fine establishment wishing to peruse my wares? Well, if you insist... Though I must warn you, they are odd, perhaps even queer, in nature... Are you brave enough to confront the challenges ahead?";
+    const imageWidth = 880;
+    const imageHeight = 440;
     %>
 
     <title><%=title%></title>
@@ -22,6 +23,7 @@
     <meta property="og:image" content="<%=image%>"/>
     <meta property="og:image:width" content="<%=imageWidth%>"/>
     <meta property="og:image:height" content="<%=imageHeight%>"/>
+    <meta property="og:image:alt" content="<%=imageAlt%>"/>
     <meta property="og:url" content="<%=url%>"/>
     <meta property="og:site_name" content="Portfolio"/>
     <meta property="og:type" content="website"/>
@@ -30,6 +32,7 @@
     <meta name="twitter:title" content="<%=title%>"/>
     <meta name="twitter:description" content="<%=description%>"/>
     <meta name="twitter:image" content="<%=image%>"/>
+    <meta name="twitter:image:alt" content="<%=imageAlt%>"/>
 
     <link rel="stylesheet" href="assets/stylesheet.css">
 </head>
